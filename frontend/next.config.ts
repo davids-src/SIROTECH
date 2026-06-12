@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_BACKEND_URL: process.env.REACT_APP_BACKEND_URL,
   },
