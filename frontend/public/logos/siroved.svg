@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 48" fill="none">
+  <path d="M19 6 L33 11.5 V22 C33 31.5 19 40 19 40 C19 40 5 31.5 5 22 V11.5 Z" stroke="#1A6BE8" stroke-width="2.5" fill="none"/>
+  <path d="M13 22.5 L17.5 27 L25.5 18" stroke="#1A6BE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="44" y="32" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="3" fill="#F0F0F5">SIRO-VÉD</text>
+</svg>

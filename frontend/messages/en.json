@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "references": "References",
+    "contact": "Contact",
+    "quote": "Get a Quote"
+  },
+  "hero": {
+    "eyebrow": "SIROTECH — Technology Services Group",
+    "headline": "One Partner.\nEvery Layer\nof Your Infrastructure.",
+    "sub": "IT operations, security systems, and custom software — delivered by specialists under one roof.",
+    "cta1": "Find Your Solution",
+    "cta2": "Contact Us"
+  },
+  "brands": {
+    "explore": "Explore",
+    "sironic": "IT operations, managed services, network infrastructure and NIS2 compliance.",
+    "siroved": "Security systems: CCTV, alarms, fire detection and access control.",
+    "sirosoft": "Custom software development, web applications, ERP & CRM systems.",
+    "soon": "More coming soon",
+    "soonDesc": "The SIROTECH brand family keeps growing — new specialisations are on the way."
+  },
+  "about": {
+    "eyebrow": "ABOUT SIROTECH",
+    "headline": "Your technology partner from network cable to custom software.",
+    "body": "SIROTECH Kft. brings together IT managed services, physical security technology, and bespoke software development under a single legal entity and service contract. No coordination overhead between vendors — one team, one point of contact, full accountability.",
+    "stats": [
+      { "value": "10+", "label": "Years of experience" },
+      { "value": "3", "label": "Specialised sub-brands" },
+      { "value": "1", "label": "Point of contact" }
+    ]
+  },
+  "deep": {
+    "sironic": {
+      "eyebrow": "SIRONIC — IT OPERATIONS",
+      "headline": "A stable IT backbone with predictable costs.",
+      "bullets": [
+        "Managed IT services and helpdesk",
+        "Network infrastructure design and operations",
+        "Server & cloud operations with proactive monitoring",
+        "NIS2 compliance consulting and audit preparation"
+      ],
+      "cta": "Visit sironic.hu →"
+    },
+    "siroved": {
+      "eyebrow": "SIRO-VÉD — SECURITY SYSTEMS",
+      "headline": "Physical protection you can truly rely on.",
+      "bullets": [
+        "IP camera system design and installation",
+        "Intrusion detection and alarm systems",
+        "Fire detection systems with ongoing maintenance",
+        "Access control and time & attendance systems"
+      ],
+      "cta": "Visit siroved.hu →"
+    },
+    "sirosoft": {
+      "eyebrow": "SIROSOFT — SOFTWARE DEVELOPMENT",
+      "headline": "Software shaped around your processes.",
+      "bullets": [
+        "Custom web applications and client portals",
+        "ERP & CRM implementation and integration",
+        "Process automation and business reporting",
+        "Long-term support and continuous development"
+      ],
+      "cta": "Visit sirosoft.hu →"
+    }
+  },
+  "why": {
+    "eyebrow": "WHY SIROTECH",
+    "headline": "What sets us apart",
+    "items": [
+      {
+        "title": "Single contract, multiple services",
+        "body": "One MSA covers IT ops, security hardware, and software development."
+      },
+      {
+        "title": "Licensed & certified",
+        "body": "Security technology installer permit. NIS2 compliance consulting. Fire protection qualification."
+      },
+      {
+        "title": "1 business day response SLA",
+        "body": "Dedicated account manager and escalation path for every client."
+      },
+      {
+        "title": "Based in Hungary",
+        "body": "On-site support across Budapest and surroundings, remote support nationwide."
+      },
+      {
+        "title": "Scalable engagements",
+        "body": "From a single server to full infrastructure outsourcing — we scale with you."
+      },
+      {
+        "title": "Transparent pricing",
+        "body": "Fixed monthly fees, no surprise callout charges. Get an estimate in 3 minutes."
+      }
+    ]
+  },
+  "pricing": {
+    "headline": "How much does outsourced IT cost?",
+    "sub": "Fill in our 15-question form and get an indicative quote in under 3 minutes. No commitment.",
+    "cta": "Start the Quote Calculator →",
+    "note": "Pricing adapts to your company size, device count, and required service level."
+  },
+  "references": {
+    "eyebrow": "REFERENCES",
+    "headline": "Trusted by businesses across Hungary",
+    "items": [
+      {
+        "company": "Horizont Trans Kft.",
+        "industry": "Logistics",
+        "quote": "SIROTECH manages our entire site's IT and camera systems in one hand. One call, and every issue gets resolved."
+      },
+      {
+        "company": "MediPlan Health Center",
+        "industry": "Healthcare",
+        "quote": "They also guided us through our NIS2 preparation. Professional, well-documented work, delivered on time."
+      },
+      {
+        "company": "FerroBuild Zrt.",
+        "industry": "Construction",
+        "quote": "Their custom worksheet management software saves us hours of administration every week. Their support is exemplary."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "headline": "Let's talk about your infrastructure.",
+    "responseNote": "We respond to every inquiry within 1 business day.",
+    "details": {
+      "email": "info@sirotech.hu",
+      "phone": "+36 ...",
+      "location": "Budapest, Hungary"
+    },
+    "form": {
+      "company": "Company name",
+      "name": "Name",
+      "email": "Email",
+      "interest": "I'm interested in",
+      "message": "Message",
+      "options": [
+        "SIRONIC – IT Operations",
+        "SIRO-VÉD – Security Systems",
+        "SIROSOFT – Software Development",
+        "Other / Not sure yet"
+      ],
+      "submit": "Send Message →",
+      "sending": "Sending...",
+      "success": "Thank you! We received your message and will get back to you within 1 business day.",
+      "error": "Something went wrong. Please try again or write to info@sirotech.hu.",
+      "required": "Required field",
+      "invalidEmail": "Invalid email address"
+    }
+  },
+  "footer": {
+    "brandsTitle": "Sub-brands",
+    "navTitle": "Navigation",
+    "privacy": "Privacy Policy",
+    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: ...",
+    "tagline": "One company. Every layer of protection."
+  }
+}
