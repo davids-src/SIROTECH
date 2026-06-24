@@ -10,17 +10,22 @@ Umbrella brand website for SIROTECH Informatikai és Biztonságtechnikai Kft. th
 - Phone / tax number: placeholders ("+36 ..." / "Adószám: ...")
 - Quote calculator: OUT OF SCOPE — CTA links to sironic.hu
 
-## Architecture
-- Frontend: Next.js 15 (App Router) + TypeScript strict + Tailwind v3, port 3000 via supervisor (`yarn start` → `next dev`)
+## Architecture (updated 2026-06-24)
+- **Pure Next.js full-stack** (per user request): Next.js 15 App Router + TypeScript strict + Tailwind v3 + Nodemailer + MongoDB driver, port 3000
+- Backend logic lives in Next.js Route Handlers under `/server/*` (e.g. `src/app/server/contact/route.ts`). The `/api/*` prefix is reserved by the Emergent ingress for FastAPI, which is now a minimal stub (`backend/server.py`) only kept alive so supervisor stays healthy
 - i18n: client-side context (`src/lib/i18n.tsx`), copy in `frontend/messages/hu.json` + `en.json`, toggle without reload, persisted in localStorage
 - Fonts: next/font — Space Grotesk (display), Inter (body), JetBrains Mono
 - Animations: Framer Motion (staggered hero card entrance, scroll reveals, MotionConfig reducedMotion="user")
-- Forms: React Hook Form + Zod → POST `/api/contact`
-- Backend: FastAPI (`backend/server.py`), MongoDB collection `contact_messages`, optional SMTP email (skipped while `SMTP_HOST` empty in `backend/.env`)
-- `NEXT_PUBLIC_BACKEND_URL` mapped from `REACT_APP_BACKEND_URL` in `next.config.mjs`
-- SEO: HU meta title/description, OG tags, Organization JSON-LD schema
+- Contact form: React Hook Form + Zod → `POST /server/contact` (same origin) → Nodemailer SMTP (env-gated) + Mongo insert into `contact_messages`
+- Env vars (all in `frontend/.env`): `MONGO_URL`, `DB_NAME`, `SMTP_HOST/PORT/SECURE/USERNAME/PASSWORD/FROM`, `CONTACT_INBOX`
+- SEO: HU meta title/description, OG tags, Organization JSON-LD schema (includes SIROVILL)
 
-## Implemented (2026-06-12) — MVP
+## Implemented (updates)
+### 2026-06-24
+- Migrated backend from FastAPI/Python to a Next.js Route Handler at `/server/contact` using Nodemailer + the official `mongodb` driver. Frontend now calls `/server/contact` on the same origin. FastAPI is a no-op stub.
+- Added 4th sub-brand **SIROVILL** (villanyszerelés) with accent `#F5B81C` (amber). It now occupies what used to be the "Hamarosan" placeholder slot in the hero — the 4-column grid is visually unchanged. Lightning bolt icon (`Zap`) in the deep-dive panel. New deep-dive row, new contact-form interest checkbox, new footer link, JSON-LD schema entry, new translations in `messages/{hu,en}.json`.
+
+### 2026-06-12 — MVP
 - Sticky navbar: services dropdown (hover), anchor links, HU/EN toggle, quote CTA, mobile menu
 - Hero: eyebrow, 3-line headline, CTAs, 4 brand-switcher cards with accent glows + staggered entrance (signature element)
 - About section: display headline + body + 3 stats

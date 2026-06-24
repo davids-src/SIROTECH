@@ -45,6 +45,7 @@ const organizationSchema = {
     { "@type": "Organization", name: "SIRONIC", url: "https://sironic.hu" },
     { "@type": "Organization", name: "SIRO-VÉD", url: "https://siroved.hu" },
     { "@type": "Organization", name: "SIROSOFT", url: "https://sirosoft.hu" },
+    { "@type": "Organization", name: "SIROVILL", url: "https://sirovill.hu" },
   ],
 };
 

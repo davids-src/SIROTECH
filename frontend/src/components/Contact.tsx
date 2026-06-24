@@ -37,7 +37,7 @@ export const Contact = () => {
   const onSubmit = async (values: FormValues) => {
     setStatus("sending");
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/contact`, {
+      const res = await fetch(`/server/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

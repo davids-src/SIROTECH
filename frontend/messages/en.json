@@ -18,6 +18,7 @@
     "sironic": "IT operations, managed services, network infrastructure and NIS2 compliance.",
     "siroved": "Security systems: CCTV, alarms, fire detection and access control.",
     "sirosoft": "Custom software development, web applications, ERP & CRM systems.",
+    "sirovill": "Electrical installation: power, low-voltage, industrial and commercial works.",
     "soon": "More coming soon",
     "soonDesc": "The SIROTECH brand family keeps growing — new specialisations are on the way."
   },
@@ -64,6 +65,17 @@
         "Long-term support and continuous development"
       ],
       "cta": "Visit sirosoft.hu →"
+    },
+    "sirovill": {
+      "eyebrow": "SIROVILL — ELECTRICAL INSTALLATION",
+      "headline": "Power that quietly does its job in the background.",
+      "bullets": [
+        "Full-scope power installations and renovations",
+        "Low-voltage, structured cabling and smart controls",
+        "Industrial, commercial and office electrical works",
+        "Maintenance, safety measurements and documentation"
+      ],
+      "cta": "Visit sirovill.hu →"
     }
   },
   "why": {
@@ -142,6 +154,7 @@
         "SIRONIC – IT Operations",
         "SIRO-VÉD – Security Systems",
         "SIROSOFT – Software Development",
+        "SIROVILL – Electrical Installation",
         "Other / Not sure yet"
       ],
       "submit": "Send Message →",

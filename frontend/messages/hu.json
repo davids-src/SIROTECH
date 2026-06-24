@@ -18,6 +18,7 @@
     "sironic": "IT üzemeltetés, menedzselt szolgáltatások, hálózati infrastruktúra és NIS2 megfelelőség.",
     "siroved": "Biztonságtechnika: kamerarendszerek, riasztók, tűzjelzés és beléptetés.",
     "sirosoft": "Egyedi szoftverfejlesztés, webalkalmazások, ERP- és CRM-rendszerek.",
+    "sirovill": "Villanyszerelés: erősáram, gyengeáram, ipari és kereskedelmi kivitelezés.",
     "soon": "Hamarosan",
     "soonDesc": "A SIROTECH brandcsalád folyamatosan bővül — új szakterületek érkeznek."
   },
@@ -64,6 +65,17 @@
         "Hosszú távú támogatás és továbbfejlesztés"
       ],
       "cta": "Irány a sirosoft.hu →"
+    },
+    "sirovill": {
+      "eyebrow": "SIROVILL — VILLANYSZERELÉS",
+      "headline": "Áram, ami megbízhatóan a háttérben dolgozik.",
+      "bullets": [
+        "Teljes körű erősáramú kivitelezés és felújítás",
+        "Gyengeáram, struktúrált hálózat és okos vezérlés",
+        "Ipari, kereskedelmi és irodaházi villanyszerelés",
+        "Karbantartás, érintésvédelmi mérések és jegyzőkönyvek"
+      ],
+      "cta": "Irány a sirovill.hu →"
     }
   },
   "why": {
@@ -142,6 +154,7 @@
         "SIRONIC – IT üzemeltetés",
         "SIRO-VÉD – Biztonságtechnika",
         "SIROSOFT – Szoftverfejlesztés",
+        "SIROVILL – Villanyszerelés",
         "Egyéb / Még nem tudom"
       ],
       "submit": "Üzenet küldése →",

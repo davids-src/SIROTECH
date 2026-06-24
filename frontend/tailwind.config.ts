@@ -15,6 +15,7 @@ const config: Config = {
         sironic: "#E8271A",
         siroved: "#1A6BE8",
         sirosoft: "#1AE87B",
+        sirovill: "#F5B81C",
       },
       fontFamily: {
         display: ["var(--font-display)", "sans-serif"],

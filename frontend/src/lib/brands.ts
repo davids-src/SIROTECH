@@ -1,5 +1,5 @@
 export type Brand = {
-  id: "sironic" | "siroved" | "sirosoft";
+  id: "sironic" | "siroved" | "sirosoft" | "sirovill";
   name: string;
   color: string;
   href: string;
@@ -27,5 +27,12 @@ export const BRANDS: Brand[] = [
     color: "#1AE87B",
     href: "https://sirosoft.hu",
     logo: "/logos/sirosoft.svg",
+  },
+  {
+    id: "sirovill",
+    name: "SIROVILL",
+    color: "#F5B81C",
+    href: "https://sirovill.hu",
+    logo: "/logos/sirovill.svg",
   },
 ];

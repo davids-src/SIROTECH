@@ -1,11 +1,17 @@
 "use client";
 
-import { Network, ShieldCheck, Code2, Check, ArrowUpRight } from "lucide-react";
+import { Network, ShieldCheck, Code2, Zap, Check, ArrowUpRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { BRANDS } from "@/lib/brands";
 import { Reveal } from "@/components/Reveal";
 
-const ICONS = { sironic: Network, siroved: ShieldCheck, sirosoft: Code2 } as const;
+const ICONS = {
+  sironic: Network,
+  siroved: ShieldCheck,
+  sirosoft: Code2,
+  sirovill: Zap,
+} as const;
+const DARK_TEXT_BRANDS = new Set(["sirosoft", "sirovill"]);
 
 export const DeepDives = () => {
   const { t } = useI18n();
@@ -16,7 +22,7 @@ export const DeepDives = () => {
         const Icon = ICONS[brand.id];
         const bullets: string[] = t(`deep.${brand.id}.bullets`);
         const reversed = index % 2 === 1;
-        const ctaTextColor = brand.id === "sirosoft" ? "#0A0A0C" : "#FFFFFF";
+        const ctaTextColor = DARK_TEXT_BRANDS.has(brand.id) ? "#0A0A0C" : "#FFFFFF";
 
         return (
           <div

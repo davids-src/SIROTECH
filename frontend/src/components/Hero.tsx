@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Plus } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { BRANDS } from "@/lib/brands";
 
@@ -109,25 +109,6 @@ export const Hero = () => {
               </a>
             </motion.div>
           ))}
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.45 + 3 * 0.06, ease: "easeOut" }}
-          >
-            <div
-              data-testid="brand-card-soon"
-              className="flex h-full flex-col rounded-lg border border-dashed border-line bg-surface/50 p-6"
-            >
-              <span className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted">
-                <Plus size={16} />
-              </span>
-              <p className="mt-5 flex-1 text-sm leading-relaxed text-muted/70">
-                {t("brands.soonDesc")}
-              </p>
-              <span className="label mt-6 text-muted/60">{t("brands.soon")}</span>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
