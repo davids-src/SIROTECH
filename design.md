@@ -19,9 +19,11 @@
 
 ## 2. Színpaletta
 
+> **FONTOS:** A 2.1 (alaprétegek), 2.2 (szöveg) és 2.4 (szabályok) **MINDEN al-brand oldalán azonosak és változatlanok**. Ez a közös vizuális horgony, ami a SIROTECH márkacsaládot egységbe fogja. Csak a 2.3 pont (accent) függ az al-brandtől.
+
 A pontos HEX értékeket használd. Ne közelítsd, ne cseréld le HSL Tailwind alapértelmezésekre.
 
-### 2.1 Alaprétegek (sötét)
+### 2.1 Alaprétegek (sötét) — **KÖZÖS MINDEN AL-BRANDNÉL**
 
 | Token | HEX | Használat |
 |---|---|---|
@@ -30,26 +32,29 @@ A pontos HEX értékeket használd. Ne közelítsd, ne cseréld le HSL Tailwind 
 | `panel` | `#18181F` | Emelt / lebegő panel (dropdown, modal). |
 | `line` | `#2A2A35` | Finom elválasztók, border-ok. |
 
-### 2.2 Szöveg
+### 2.2 Szöveg — **KÖZÖS MINDEN AL-BRANDNÉL**
 
 | Token | HEX | Használat |
 |---|---|---|
 | `ink` | `#F0F0F5` | Elsődleges szöveg, headline. |
 | `muted` | `#8888A0` | Másodlagos szöveg, label, description. |
-| `silver` | `#C0C0D0` | „Umbrella" / semleges accent — CTA, márka-független kiemelés. |
+| `silver` | `#C0C0D0` | „Umbrella" / semleges accent — CTA, márka-független kiemelés. Az `sirotech.hu` (umbrella) oldalon ez az elsődleges accent. Al-brand oldalakon másodlagos szerepű, semleges CTA-khoz. |
 
-### 2.3 Accent színek (brand / kategória)
+### 2.3 Accent színek — **AL-BRANDENKÉNT EGY**
 
-Minden szolgáltatás- vagy szekció-családhoz **egy** saját accent szín tartozik. Sose keverj kettőt. Ha új kategória kerül be, adj neki új accentet — ne használd újra a meglévőt.
+Minden al-brand oldalán **pontosan egy** accent szín szerepel a saját identitása szerint. Ne keverj kettőt (kivétel: az umbrella `sirotech.hu`, ahol mind a négy megjelenik a hero switcherben és a deep-dive szekciókban).
 
-| Cél | HEX | Miért |
+| Al-brand | Accent HEX | Rövid név / karakter |
 |---|---|---|
-| Primary / red accent | `#E8271A` | Vezető szolgáltatás, erős CTA, kritikus jelzés. |
-| Secondary / steel blue | `#1A6BE8` | Biztonság, védelem, megbízhatóság. |
-| Success / signal green | `#1AE87B` | Fejlesztés, siker, „új". |
-| Warning / amber | `#F5B81C` | Energia, figyelemfelhívás, ipari. |
+| **SIRONIC** (IT üzemeltetés) — `sironic.hu` | `#E8271A` | Piros — vezető szolgáltatás, erő, sürgősség (SLA). |
+| **SIRO-VÉD** (biztonságtechnika) — `siroved.hu` | `#1A6BE8` | Acélkék — védelem, megbízhatóság. |
+| **SIROSOFT** (szoftverfejlesztés) — `sirosoft.hu` | `#1AE87B` | Elektromos zöld — kód, fejlesztés, „új". |
+| **SIROVILL** (villanyszerelés) — `sirovill.hu` | `#F5B81C` | Amber — energia, áram, ipari. |
+| **SIROTECH** (umbrella) — `sirotech.hu` | `silver` `#C0C0D0` | Semleges, egyik al-brandet sem hangsúlyozza felül. |
 
-### 2.4 Színhasználati szabályok
+Új al-brand bevezetésekor válassz az eddig **nem használt** színsávból (magenta, cyan, ibolyaszín stb.). Sose használd újra egy másik al-brand accentjét.
+
+### 2.4 Színhasználati szabályok — **KÖZÖS MINDEN AL-BRANDNÉL**
 
 - **Háttér mindig sötét.** Sose tegyél sötét szöveget sötét háttérre. Sárga (`#F5B81C`) és zöld (`#1AE87B`) felületekre `#0A0A0C` szöveg jön; piros (`#E8271A`) és kék (`#1A6BE8`) felületekre fehér (`#F0F0F5`).
 - **Nincs gradient a felszínen.** Gradient csak radiális glow-ként, `opacity: 0.05–0.25` értékkel, egy accent színből átlátszóba, dekoratív ambient fényként.
@@ -285,25 +290,28 @@ Ezek nélkül az arculat nem SIROTECH-jellegű:
 
 ---
 
-## 10. Adaptálási recept — így alakítsd át a meglévő oldalt
+## 10. Adaptálási recept — így alakítsd át a meglévő al-brand oldalt
 
-Bármely input weboldal átalakítása 8 lépésben, a tartalom megtartásával:
+Bármely al-brand oldal (sironic.hu, siro-véd.hu, sirovill.hu, sirosoft.hu vagy egy jövőbeli új) átalakítása 8 lépésben, **a tartalom megtartásával**:
 
-1. **Cseréld le a teljes színpalettát** a 2. pontban leírtakra. Minden fehér vagy világos háttér → `bg` (`#0A0A0C`). Minden szürke szöveg → `muted`. Minden accent → válassz egyet a 4-ből az adott kategóriához.
+**Első lépésként állapítsd meg, melyik al-brandről van szó, és keresd ki a hozzá tartozó accent HEX-et a 2.3 pontból.** A továbbiakban ez lesz az egyetlen accent az egész oldalon — mindenhol ezt használd, ahol a példa `<accent>`-et említ (chip, ikon, glow, primary CTA, bullet check).
+
+1. **Cseréld le a teljes színpalettát** a 2. pontban leírtakra. A 2.1 (`bg`, `surface`, `panel`, `line`) és 2.2 (`ink`, `muted`, `silver`) értékei **minden al-brand oldalán azonosak**; ne térj el tőlük. Az accent az al-brand saját 2.3-beli színe.
 2. **Cseréld a fontokat**: display → Space Grotesk, body → Inter, kód/label → JetBrains Mono. Alkalmazd a 3.2 pont hierarchiát.
 3. **Cseréld le a border-radius értékeket** a 4.3 pont szerint (`rounded-lg`/`rounded`/`rounded-sm`).
 4. **Alkalmazd a spacing rendszert** (4.2 pont) — a szekciók padding-jét `py-28`-ra, a fejlécet-tartalom távolságot `mt-14`-re.
-5. **Minden szekció fölé eyebrow label** (mono, uppercase, `text-silver` vagy accent-színnel).
-6. **Cseréld le a gombokat és kártyákat** az 5. pont patternjeire.
-7. **Cseréld le az ikonokat** Lucide-ra (6. pont). Ha az input oldalon emoji van, azt Lucide ikonra cseréld ki.
+5. **Minden szekció fölé eyebrow label** (mono, uppercase). Az umbrella `sirotech.hu` oldalon `text-silver`; al-brand oldalakon az adott brand accent színével (`style={{ color: <accent> }}`).
+6. **Cseréld le a gombokat és kártyákat** az 5. pont patternjeire. Az elsődleges CTA az al-brand accent színét kapja (`bg-[<accent>]`), a szöveg fehér vagy `#0A0A0C` a 2.4 kontraszt-szabály szerint.
+7. **Cseréld le az ikonokat** Lucide-ra (6. pont). Az al-brand accent színét kapják, ahol vizuális kiemelés kell (bullet check, kártya-headline ikon, hero display icon).
 8. **Vezess be motion-t**: `<MotionConfig reducedMotion="user">` wrapper, scroll reveal minden szekcióra, staggered belépés minden kártyagridre a 7. pont értékeivel. Hover state minden kattintható elemre (7.3).
 
-### Amit NE változtass meg:
+### Amit NE változtass meg (semelyik al-brand oldalon):
 - Szekciók sorrendje.
 - Szövegek (headline, body, bullet listák).
 - Űrlapmezők és kötelezőségük.
 - Menü linkek és útvonalak.
 - Kép-elrendezés (bal/jobb alternálás megmarad).
+- **Az alappaletta (2.1–2.2) és a tipográfia (3.) sose módosul brandenként.**
 
 ---
 
@@ -338,17 +346,20 @@ Kötelező globális CSS-ben a `body::after` grain layer, a `.hero-grid` mintáz
 
 ## 12. Ellenőrzőlista átalakítás után
 
+- [ ] Az alappaletta (`bg #0A0A0C`, `surface #111116`, `panel #18181F`, `line #2A2A35`, `ink #F0F0F5`, `muted #8888A0`) a többi SIROTECH al-brand oldallal **pixelre azonos**.
+- [ ] Az oldalon **pontosan egy** al-brand accent szerepel (kivéve az umbrella `sirotech.hu`).
 - [ ] Nincs világos háttér sehol (csak a fenti CTA-gombokban az `ink`/`silver`).
 - [ ] Nincs sötét szöveg sötét háttéren.
 - [ ] Minden szekció fölött ott van a mono uppercase eyebrow.
-- [ ] Egy oldalon max 1–2 accent szín szerepel egyszerre (a semleges silver-en kívül).
 - [ ] Minden interaktív elemen van hover state (150 ms, konkrét property-vel).
 - [ ] Minden szekció fade-in-e csak egyszer fut le, nem loopol.
 - [ ] Prefers-reduced-motion tesztelve — az animációk lekapcsolnak.
 - [ ] Minden ikon Lucide, egyetlen emoji sincs.
 - [ ] A tartalom, a szekciók sorrendje, az űrlapmezők és a linkek nem változtak.
+- [ ] Ha az al-brandet átnavigálva vetjük össze az umbrella oldallal (`sirotech.hu` → `sironic.hu` stb.), a hangulat, a spacing és a tipográfia egységes; csak az accent szín cserélődik.
 
 ---
 
-**Verzió:** 1.0 — 2026-06-24
+**Verzió:** 1.1 — 2026-06-24
 **Forrás projekt:** sirotech.hu (SIROTECH Informatikai és Biztonságtechnikai Kft.)
+**Használat:** SIROTECH umbrella + minden al-brand oldal (sironic.hu, siroved.hu, sirosoft.hu, sirovill.hu és jövőbeli al-brandek)
