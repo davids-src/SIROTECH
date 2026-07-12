@@ -1,0 +1,175 @@
+{
+  "nav": {
+    "services": "Szolgáltatások",
+    "about": "Rólunk",
+    "references": "Referenciák",
+    "contact": "Kapcsolat",
+    "quote": "Ajánlatkérés"
+  },
+  "hero": {
+    "eyebrow": "SIROTECH — Technológiai szolgáltatáscsoport",
+    "headline": "Egy partner.\nInfrastruktúrája\nminden rétegéhez.",
+    "sub": "IT üzemeltetés, biztonságtechnika és egyedi szoftverfejlesztés — specialistáktól, egy kézből.",
+    "cta1": "Találja meg a megoldást",
+    "cta2": "Kapcsolatfelvétel"
+  },
+  "brands": {
+    "explore": "Irány a",
+    "sironic": "IT üzemeltetés, menedzselt szolgáltatások, hálózati infrastruktúra és NIS2 megfelelőség.",
+    "siroved": "Biztonságtechnika: kamerarendszerek, riasztók, tűzjelzés és beléptetés.",
+    "sirosoft": "Egyedi szoftverfejlesztés, webalkalmazások, ERP- és CRM-rendszerek.",
+    "sirovill": "Villanyszerelés: erősáram, gyengeáram, ipari és kereskedelmi kivitelezés.",
+    "soon": "Hamarosan",
+    "soonDesc": "A SIROTECH brandcsalád folyamatosan bővül — új szakterületek érkeznek."
+  },
+  "about": {
+    "eyebrow": "A SIROTECH-RŐL",
+    "headline": "Technológiai partnere a hálózati kábeltől az egyedi szoftverig.",
+    "body": "A SIROTECH Kft. egyetlen jogi személy és egyetlen szolgáltatási szerződés keretében egyesíti az IT üzemeltetést, a fizikai biztonságtechnikát és az egyedi szoftverfejlesztést. Nincs többé egyeztetési teher a beszállítók között — egy csapat, egy kapcsolattartó, teljes felelősségvállalás.",
+    "stats": [
+      { "value": "10+", "label": "Év tapasztalat" },
+      { "value": "3", "label": "Specializált al-brand" },
+      { "value": "1", "label": "Kapcsolattartó" }
+    ]
+  },
+  "deep": {
+    "sironic": {
+      "eyebrow": "SIRONIC — IT ÜZEMELTETÉS",
+      "headline": "Stabil IT-háttér, kiszámítható költségekkel.",
+      "bullets": [
+        "Menedzselt IT szolgáltatások és helpdesk",
+        "Hálózati infrastruktúra tervezése és üzemeltetése",
+        "Szerver- és felhőüzemeltetés, proaktív monitoring",
+        "NIS2 megfelelőségi tanácsadás és audit-felkészítés"
+      ],
+      "cta": "Irány a sironic.hu →"
+    },
+    "siroved": {
+      "eyebrow": "SIRO-VÉD — BIZTONSÁGTECHNIKA",
+      "headline": "Fizikai védelem, amire valóban számíthat.",
+      "bullets": [
+        "IP kamerarendszerek tervezése és telepítése",
+        "Behatolásjelző és riasztórendszerek",
+        "Tűzjelző rendszerek kivitelezése és karbantartása",
+        "Beléptetőrendszerek és munkaidő-nyilvántartás"
+      ],
+      "cta": "Irány a siroved.hu →"
+    },
+    "sirosoft": {
+      "eyebrow": "SIROSOFT — SZOFTVERFEJLESZTÉS",
+      "headline": "Szoftver, ami az Ön folyamataihoz igazodik.",
+      "bullets": [
+        "Egyedi webalkalmazások és ügyfélportálok",
+        "ERP- és CRM-rendszerek bevezetése, integrációja",
+        "Folyamatautomatizálás és üzleti riportok",
+        "Hosszú távú támogatás és továbbfejlesztés"
+      ],
+      "cta": "Irány a sirosoft.hu →"
+    },
+    "sirovill": {
+      "eyebrow": "SIROVILL — VILLANYSZERELÉS",
+      "headline": "Áram, ami megbízhatóan a háttérben dolgozik.",
+      "bullets": [
+        "Teljes körű erősáramú kivitelezés és felújítás",
+        "Gyengeáram, struktúrált hálózat és okos vezérlés",
+        "Ipari, kereskedelmi és irodaházi villanyszerelés",
+        "Karbantartás, érintésvédelmi mérések és jegyzőkönyvek"
+      ],
+      "cta": "Irány a sirovill.hu →"
+    }
+  },
+  "why": {
+    "eyebrow": "MIÉRT A SIROTECH",
+    "headline": "Ami megkülönböztet minket",
+    "items": [
+      {
+        "title": "Egy szerződés, több szolgáltatás",
+        "body": "Egyetlen keretszerződés fedi le az IT üzemeltetést, a biztonságtechnikai hardvert és a szoftverfejlesztést."
+      },
+      {
+        "title": "Engedélyek és minősítések",
+        "body": "Biztonságtechnikai szerelői engedély. NIS2 megfelelőségi tanácsadás. Tűzvédelmi szakképesítés."
+      },
+      {
+        "title": "1 munkanapos válaszidő SLA",
+        "body": "Dedikált kapcsolattartó és eszkalációs útvonal minden ügyfelünknek."
+      },
+      {
+        "title": "Magyarországi székhely",
+        "body": "Helyszíni támogatás Budapesten és környékén, távoli támogatás országosan."
+      },
+      {
+        "title": "Skálázható együttműködés",
+        "body": "Egyetlen szervertől a teljes infrastruktúra kiszervezéséig — Önnel együtt növekszünk."
+      },
+      {
+        "title": "Átlátható árazás",
+        "body": "Fix havidíjak, meglepetés-kiszállási díjak nélkül. Becslés 3 perc alatt."
+      }
+    ]
+  },
+  "pricing": {
+    "headline": "Mennyibe kerül a kiszervezett IT?",
+    "sub": "Töltse ki 15 kérdéses űrlapunkat, és 3 percen belül tájékoztató árajánlatot kap. Kötelezettségvállalás nélkül.",
+    "cta": "Árajánlat kalkulátor indítása →",
+    "note": "Az árazás az Ön cégméretéhez, eszközszámához és a kívánt szolgáltatási szinthez igazodik."
+  },
+  "references": {
+    "eyebrow": "REFERENCIÁK",
+    "headline": "Magyarországi vállalkozások bizalmával",
+    "items": [
+      {
+        "company": "Horizont Trans Kft.",
+        "industry": "Logisztika",
+        "quote": "A SIROTECH egy kézben tartja a teljes telephelyünk IT-jét és kamerarendszerét. Egy hívás, és minden kérdés megoldódik."
+      },
+      {
+        "company": "MediPlan Egészségközpont",
+        "industry": "Egészségügy",
+        "quote": "A NIS2 felkészülésünket is ők vezették végig. Profi, dokumentált, határidőre szállított munka."
+      },
+      {
+        "company": "FerroBuild Zrt.",
+        "industry": "Építőipar",
+        "quote": "Az egyedi munkalap-kezelő szoftverük heti több órát spórol az adminisztrációnkon. A támogatásuk példaértékű."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "KAPCSOLAT",
+    "headline": "Beszéljünk az Ön infrastruktúrájáról.",
+    "responseNote": "Minden megkeresésre 1 munkanapon belül válaszolunk.",
+    "details": {
+      "email": "info@sirotech.hu",
+      "phone": "+36 ...",
+      "location": "Budapest, Magyarország"
+    },
+    "form": {
+      "company": "Cégnév",
+      "name": "Név",
+      "email": "E-mail",
+      "interest": "Érdeklődési terület",
+      "message": "Üzenet",
+      "options": [
+        "SIRONIC – IT üzemeltetés",
+        "SIRO-VÉD – Biztonságtechnika",
+        "SIROSOFT – Szoftverfejlesztés",
+        "SIROVILL – Villanyszerelés",
+        "Egyéb / Még nem tudom"
+      ],
+      "submit": "Üzenet küldése →",
+      "sending": "Küldés...",
+      "success": "Köszönjük! Üzenetét megkaptuk, 1 munkanapon belül jelentkezünk.",
+      "error": "Hiba történt a küldés során. Kérjük, próbálja újra, vagy írjon az info@sirotech.hu címre.",
+      "required": "Kötelező mező",
+      "invalidEmail": "Érvénytelen e-mail cím"
+    }
+  },
+  "footer": {
+    "brandsTitle": "Al-brandek",
+    "navTitle": "Navigáció",
+    "privacy": "Adatvédelmi tájékoztató",
+    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: ...",
+    "tagline": "Egy cég. A védelem minden rétege."
+  }
+}
