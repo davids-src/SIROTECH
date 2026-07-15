@@ -7,6 +7,7 @@ import { z } from "zod";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import { trackEvent } from "@/lib/gtag";
 
 const schema = z.object({
   company: z.string().min(1),
@@ -47,17 +48,19 @@ export const Contact = () => {
         }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      trackEvent("contact_submit_success", "contact", values.interests?.join(",") || "none");
       setStatus("success");
       reset();
-    } catch {
+    } catch (err: any) {
+      trackEvent("contact_submit_failure", "contact", err?.message || "unknown_error");
       setStatus("error");
     }
   };
 
   const details = [
-    { icon: Mail, value: t("contact.details.email"), id: "email" },
-    { icon: Phone, value: t("contact.details.phone"), id: "phone" },
-    { icon: MapPin, value: t("contact.details.location"), id: "location" },
+    { icon: Mail, value: t("contact.details.email"), id: "email", href: `mailto:${t("contact.details.email")}` },
+    { icon: Phone, value: t("contact.details.phone"), id: "phone", href: `tel:${t("contact.details.phone").replace(/\s+/g, "")}` },
+    { icon: MapPin, value: t("contact.details.location"), id: "location", href: `https://maps.google.com/?q=${encodeURIComponent(t("contact.details.location"))}` },
   ];
 
   return (
@@ -72,12 +75,20 @@ export const Contact = () => {
 
           <div className="mt-12 space-y-5">
             {details.map((detail) => (
-              <div key={detail.id} className="flex items-center gap-4" data-testid={`contact-detail-${detail.id}`}>
-                <span className="flex h-11 w-11 items-center justify-center rounded border border-line bg-surface text-silver">
+              <a
+                key={detail.id}
+                href={detail.href}
+                target={detail.id === "location" ? "_blank" : undefined}
+                rel={detail.id === "location" ? "noreferrer" : undefined}
+                onClick={() => trackEvent("contact_detail_click", "engagement", detail.id)}
+                className="flex items-center gap-4 group cursor-pointer"
+                data-testid={`contact-detail-${detail.id}`}
+              >
+                <span className="flex h-11 w-11 items-center justify-center rounded border border-line bg-surface text-silver transition-colors group-hover:border-silver group-hover:text-ink">
                   <detail.icon size={18} strokeWidth={1.5} />
                 </span>
-                <span className="text-sm text-ink md:text-base">{detail.value}</span>
-              </div>
+                <span className="text-sm text-ink/80 transition-colors group-hover:text-ink md:text-base">{detail.value}</span>
+              </a>
             ))}
           </div>
         </Reveal>

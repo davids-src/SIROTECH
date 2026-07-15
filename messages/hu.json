@@ -7,8 +7,8 @@
     "quote": "Ajánlatkérés"
   },
   "hero": {
-    "eyebrow": "SIROTECH — Technológiai szolgáltatáscsoport",
-    "headline": "Egy partner.\nInfrastruktúrája\nminden rétegéhez.",
+    "eyebrow": "SIROTECH — IT üzemeltetés · Biztonságtechnika · Szoftverfejlesztés · Villanyszerelés",
+    "headline": "Egy partner.\naz Infrastruktúrája\nminden rétegéhez.",
     "sub": "IT üzemeltetés, biztonságtechnika és egyedi szoftverfejlesztés — specialistáktól, egy kézből.",
     "cta1": "Találja meg a megoldást",
     "cta2": "Kapcsolatfelvétel"
@@ -25,10 +25,10 @@
   "about": {
     "eyebrow": "A SIROTECH-RŐL",
     "headline": "Technológiai partnere a hálózati kábeltől az egyedi szoftverig.",
-    "body": "A SIROTECH Kft. egyetlen jogi személy és egyetlen szolgáltatási szerződés keretében egyesíti az IT üzemeltetést, a fizikai biztonságtechnikát és az egyedi szoftverfejlesztést. Nincs többé egyeztetési teher a beszállítók között — egy csapat, egy kapcsolattartó, teljes felelősségvállalás.",
+    "body": "A SIROTECH Kft. — Székesfehérvár és Fejér megye vezető IT- és biztonságtechnikai partnere — egyetlen jogi személy és egyetlen szolgáltatási szerződés keretében egyesíti a rendszergazda és IT üzemeltetési szolgáltatásokat, a kamerarendszerek és riasztók kivitelezését, az egyedi szoftverfejlesztést, valamint a villanyszerelési és elektromos kivitelezési munkákat. Nincs egyeztetési teher a beszállítók között — egy csapat, egy kapcsolattartó, teljes felelősségvállalás.",
     "stats": [
-      { "value": "10+", "label": "Év tapasztalat" },
-      { "value": "3", "label": "Specializált al-brand" },
+      { "value": "1 mnd", "label": "Válaszidő-garancia" },
+      { "value": "{count}", "label": "szolgáltatási márka" },
       { "value": "1", "label": "Kapcsolattartó" }
     ]
   },
@@ -40,7 +40,8 @@
         "Menedzselt IT szolgáltatások és helpdesk",
         "Hálózati infrastruktúra tervezése és üzemeltetése",
         "Szerver- és felhőüzemeltetés, proaktív monitoring",
-        "NIS2 megfelelőségi tanácsadás és audit-felkészítés"
+        "NIS2 megfelelőségi tanácsadás és audit-felkészítés",
+        "Helyszíni IT support és külsős rendszergazda Székesfehérváron, Fejér megyében, Dunaújvárosban és Budapesten"
       ],
       "cta": "Irány a sironic.hu →"
     },
@@ -51,7 +52,8 @@
         "IP kamerarendszerek tervezése és telepítése",
         "Behatolásjelző és riasztórendszerek",
         "Tűzjelző rendszerek kivitelezése és karbantartása",
-        "Beléptetőrendszerek és munkaidő-nyilvántartás"
+        "Beléptetőrendszerek és munkaidő-nyilvántartás",
+        "Biztonságtechnikai kivitelezés Székesfehérváron, Dunaújvárosban és Fejér megye egész területén"
       ],
       "cta": "Irány a siroved.hu →"
     },
@@ -62,7 +64,8 @@
         "Egyedi webalkalmazások és ügyfélportálok",
         "ERP- és CRM-rendszerek bevezetése, integrációja",
         "Folyamatautomatizálás és üzleti riportok",
-        "Hosszú távú támogatás és továbbfejlesztés"
+        "Hosszú távú támogatás és továbbfejlesztés",
+        "Egyedi szoftverfejlesztés és ERP bevezetés KKV-knak Székesfehérváron és a Közép-Dunántúlon"
       ],
       "cta": "Irány a sirosoft.hu →"
     },
@@ -73,7 +76,8 @@
         "Teljes körű erősáramú kivitelezés és felújítás",
         "Gyengeáram, struktúrált hálózat és okos vezérlés",
         "Ipari, kereskedelmi és irodaházi villanyszerelés",
-        "Karbantartás, érintésvédelmi mérések és jegyzőkönyvek"
+        "Karbantartás, érintésvédelmi mérések és jegyzőkönyvek",
+        "Villanyszerelés és érintésvédelmi felülvizsgálat Székesfehérváron, Fejér megyében és a régióban"
       ],
       "cta": "Irány a sirovill.hu →"
     }
@@ -140,9 +144,9 @@
     "headline": "Beszéljünk az Ön infrastruktúrájáról.",
     "responseNote": "Minden megkeresésre 1 munkanapon belül válaszolunk.",
     "details": {
-      "email": "info@sirotech.hu",
-      "phone": "+36 ...",
-      "location": "Budapest, Magyarország"
+      "email": "hello@sironic.hu",
+      "phone": "+36 70 273 5532",
+      "location": "8000 Székesfehérvár, Lövölde utca 24"
     },
     "form": {
       "company": "Cégnév",
@@ -166,10 +170,76 @@
     }
   },
   "footer": {
-    "brandsTitle": "Al-brandek",
+    "brandsTitle": "Szolgáltatási márkák",
     "navTitle": "Navigáció",
     "privacy": "Adatvédelmi tájékoztató",
-    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: ...",
+    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: 33056151-2-07 | 8000 Székesfehérvár, Lövölde utca 24",
+    "certifications": "Hat. Biz.: 07010-822/7987/2026. SZv. · Épít. nyilv.: 17C03049",
     "tagline": "Egy cég. A védelem minden rétege."
+  },
+  "serviceAreas": {
+    "eyebrow": "LEFEDETT TERÜLETEK",
+    "headline": "IT üzemeltetés, biztonságtechnika és villanyszerelés az alábbi területeken",
+    "body": "Székhelyünk Székesfehérváron van — rendszergazda és IT outsourcing, kamerarendszer telepítés, riasztószerelés, villanyszerelés és szoftverfejlesztés szolgáltatásainkat Fejér megye teljes területén, Budapesten, a Közép-Dunántúlon és az ország több városában nyújtjuk."
+  },
+  "whyOneHand": {
+    "eyebrow": "MIÉRT EGY KÉZBŐL?",
+    "headline": "Kiszámíthatóság és egyszerűség az Ön vállalkozásának",
+    "pillars": [
+      {
+        "title": "Kiszámítható árazás",
+        "body": "Fix havidíjas konstrukciók, nincsenek váratlan kiszállási díjak vagy rejtett óradíjak."
+      },
+      {
+        "title": "Hosszú távú partnerség",
+        "body": "Technológiai hátterünk együtt növekszik és skálázódik a vállalkozásával."
+      },
+      {
+        "title": "Egyetlen koordinátor",
+        "body": "Nincs több egymásra mutogató alvállalkozó. Minden divíziót egy kézben fogunk össze."
+      },
+      {
+        "title": "Helyi csapat",
+        "body": "Székesfehérvári bázisunk biztosítja a gyors, személyes és rugalmas helyszíni reakciót."
+      }
+    ]
+  },
+  "howWeWork": {
+    "eyebrow": "HOGYAN DOLGOZUNK?",
+    "headline": "Egyszerű, átlátható folyamat a tervezéstől az üzemeltetésig",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Igényfelmérés",
+        "body": "Részletesen átbeszéljük a célokat, és átvilágítjuk a meglévő rendszereket."
+      },
+      {
+        "number": "02",
+        "title": "Írásos ajánlat",
+        "body": "Fix áras, átlátható árajánlatot adunk, pontos műszaki tartalommal."
+      },
+      {
+        "number": "03",
+        "title": "Kivitelezés",
+        "body": "Minimális leállással telepítünk, konfigurálunk és tesztelünk mindent."
+      },
+      {
+        "number": "04",
+        "title": "Üzemeltetés / SLA",
+        "body": "Folyamatos proaktív támogatást, karbantartást és gyors reakcióidőt nyújtunk."
+      }
+    ]
+  },
+  "doubleCta": {
+    "b2b": {
+      "title": "Cégeknek / B2B",
+      "body": "IT üzemeltetés, NIS2 felkészülés, kamerarendszerek és egyedi szoftverek. Komplex vállalati infrastruktúra egy kézből.",
+      "cta": "B2B konzultáció kérése →"
+    },
+    "b2c": {
+      "title": "Lakosságnak / B2C",
+      "body": "Biztonsági rendszerek, riasztók, kamerarendszerek és megbízható erősáramú villanyszerelés otthonába.",
+      "cta": "Lakossági ajánlatkérés →"
+    }
   }
 }

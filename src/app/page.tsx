@@ -1,10 +1,12 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { WhyOneHand } from "@/components/WhyOneHand";
 import { About } from "@/components/About";
 import { DeepDives } from "@/components/DeepDives";
-import { WhyGrid } from "@/components/WhyGrid";
-import { PricingCta } from "@/components/PricingCta";
-import { References } from "@/components/References";
+import { HowWeWork } from "@/components/HowWeWork";
+import { DoubleCta } from "@/components/DoubleCta";
+import { ServiceAreas } from "@/components/ServiceAreas";
+// import { References } from "@/components/References";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -14,11 +16,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <WhyOneHand />
         <About />
         <DeepDives />
-        <WhyGrid />
-        <PricingCta />
-        <References />
+        <HowWeWork />
+        <DoubleCta />
+        <ServiceAreas />
+        {/* <References /> */}
         <Contact />
       </main>
       <Footer />

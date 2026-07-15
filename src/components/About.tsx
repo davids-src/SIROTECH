@@ -2,10 +2,16 @@
 
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import { BRANDS } from "@/lib/brands";
 
 export const About = () => {
   const { t } = useI18n();
-  const stats: { value: string; label: string }[] = t("about.stats");
+  const rawStats = t("about.stats") as { value: string; label: string }[];
+  const stats = rawStats.map((stat) => ({
+    ...stat,
+    value: stat.value.replace("{count}", BRANDS.length.toString()),
+    label: stat.label.replace("{count}", BRANDS.length.toString()),
+  }));
 
   return (
     <section id="about" data-testid="about-section" className="border-t border-line/50 py-28">

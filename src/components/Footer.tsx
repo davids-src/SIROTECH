@@ -3,6 +3,7 @@
 import { Linkedin } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { BRANDS } from "@/lib/brands";
+import { trackEvent } from "@/lib/gtag";
 
 export const Footer = () => {
   const { t } = useI18n();
@@ -10,9 +11,9 @@ export const Footer = () => {
   const navLinks = [
     { label: t("nav.services"), href: "#brands" },
     { label: t("nav.about"), href: "#about" },
-    { label: t("nav.references"), href: "#references" },
+    // { label: t("nav.references"), href: "#references" },
     { label: t("nav.contact"), href: "#contact" },
-    { label: t("footer.privacy"), href: "#" },
+    { label: t("footer.privacy"), href: "/adatvedelem" },
   ];
 
   return (
@@ -20,15 +21,41 @@ export const Footer = () => {
       <div className="mx-auto max-w-site px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
           <div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logos/sirotech.svg" alt="SIROTECH" className="h-7 w-auto" />
+            <div className="flex items-center gap-2.5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/sirotech_seal.svg" alt="SIROTECH Informatikai és Biztonságtechnikai Kft. – IT üzemeltetés és biztonságtechnika, Székesfehérvár" className="h-7 w-auto" />
+              <span className="font-display text-lg font-bold tracking-normal text-ink uppercase">Sirotech</span>
+            </div>
             <p className="mt-5 max-w-xs text-sm text-muted">{t("footer.tagline")}</p>
+            <div className="mt-5 space-y-2 text-xs font-mono text-muted/80">
+              <p className="flex items-center gap-2">
+                <span className="text-muted/50 uppercase tracking-wider text-[10px]">Email:</span>
+                <a
+                  href="mailto:hello@sironic.hu"
+                  onClick={() => trackEvent("footer_email_click", "engagement", "hello@sironic.hu")}
+                  className="transition-colors hover:text-ink hover:underline"
+                >
+                  hello@sironic.hu
+                </a>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="text-muted/50 uppercase tracking-wider text-[10px]">Tel:</span>
+                <a
+                  href="tel:+36702735532"
+                  onClick={() => trackEvent("footer_phone_click", "engagement", "+36702735532")}
+                  className="transition-colors hover:text-ink hover:underline"
+                >
+                  +36 70 273 5532
+                </a>
+              </p>
+            </div>
             <a
               href="https://www.linkedin.com"
               target="_blank"
               rel="noreferrer"
               data-testid="footer-linkedin"
               aria-label="LinkedIn"
+              onClick={() => trackEvent("social_linkedin_click", "engagement", "LinkedIn")}
               className="mt-6 inline-flex h-10 w-10 items-center justify-center rounded border border-line text-muted transition-colors hover:border-silver hover:text-ink"
             >
               <Linkedin size={17} />
@@ -67,9 +94,12 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-line/50 pt-7">
-          <p className="font-mono text-xs text-muted" data-testid="footer-legal">
+        <div className="mt-14 border-t border-line/50 pt-7 flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
+          <p className="font-mono text-[11px] leading-relaxed text-muted/80" data-testid="footer-legal">
             {t("footer.legal")}
+          </p>
+          <p className="font-mono text-[11px] leading-relaxed text-muted/60">
+            {t("footer.certifications")}
           </p>
         </div>
       </div>

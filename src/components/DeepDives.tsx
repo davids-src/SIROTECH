@@ -1,17 +1,19 @@
 "use client";
 
-import { Network, ShieldCheck, Code2, Zap, Check, ArrowUpRight } from "lucide-react";
+import { Check, ArrowUpRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { BRANDS } from "@/lib/brands";
 import { Reveal } from "@/components/Reveal";
+import { trackEvent } from "@/lib/gtag";
 
-const ICONS = {
-  sironic: Network,
-  siroved: ShieldCheck,
-  sirosoft: Code2,
-  sirovill: Zap,
-} as const;
 const DARK_TEXT_BRANDS = new Set(["sirosoft", "sirovill"]);
+
+const BRAND_ALTS: Record<string, string> = {
+  sironic: "SIRONIC – Rendszergazda szolgáltatás és IT üzemeltetés KKV-knak Székesfehérvár, Dunaújváros és Budapest területén",
+  siroved: "SIRO-VÉD – Biztonságtechnikai kivitelezés, kamerarendszer és riasztórendszer telepítés Székesfehérváron és Fejér megyében",
+  sirosoft: "SIROSOFT – KKV szoftverfejlesztés, egyedi webalkalmazások, ERP és CRM rendszerek bevezetése",
+  sirovill: "SIROVILL – Ipari és lakossági villanyszerelés, érintésvédelmi vizsgálat és hálózatépítés",
+};
 
 export const DeepDives = () => {
   const { t } = useI18n();
@@ -19,8 +21,17 @@ export const DeepDives = () => {
   return (
     <section className="border-t border-line/50">
       {BRANDS.map((brand, index) => {
-        const Icon = ICONS[brand.id];
-        const bullets: string[] = t(`deep.${brand.id}.bullets`);
+        let bullets: string[] = t(`deep.${brand.id}.bullets`);
+        if (brand.id === "sirovill") {
+          bullets = bullets.filter(bullet =>
+            bullet.toLowerCase().includes("gyengeáram") ||
+            bullet.toLowerCase().includes("low-voltage") ||
+            bullet.toLowerCase().includes("cabling") ||
+            bullet.toLowerCase().includes("hálózat") ||
+            bullet.toLowerCase().includes("vezérlés") ||
+            bullet.toLowerCase().includes("controls")
+          );
+        }
         const reversed = index % 2 === 1;
         const ctaTextColor = DARK_TEXT_BRANDS.has(brand.id) ? "#0A0A0C" : "#FFFFFF";
 
@@ -33,9 +44,10 @@ export const DeepDives = () => {
           >
             <div className="mx-auto grid max-w-site items-center gap-12 px-6 md:grid-cols-2 md:gap-20">
               {/* Visual panel */}
+              {/* TODO: replace with real project photo before launch */}
               <Reveal className={reversed ? "md:order-2" : ""}>
                 <div
-                  className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg border bg-surface"
+                  className="group relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg border bg-surface"
                   style={{ borderColor: `${brand.color}30` }}
                 >
                   <div
@@ -46,7 +58,12 @@ export const DeepDives = () => {
                     aria-hidden
                   />
                   <div className="hero-grid absolute inset-0 opacity-50" aria-hidden />
-                  <Icon size={84} strokeWidth={1.25} style={{ color: brand.color }} />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`/brand/${brand.id}_logo.svg`}
+                    alt={BRAND_ALTS[brand.id] || brand.name}
+                    className="h-32 w-auto transition-transform duration-300 group-hover:scale-105"
+                  />
                   <span className="absolute bottom-4 left-5 font-mono text-xs text-muted/70">
                     {`// ${brand.href.replace("https://", "")}`}
                   </span>
@@ -63,7 +80,11 @@ export const DeepDives = () => {
                     background: `${brand.color}12`,
                   }}
                 >
-                  {t(`deep.${brand.id}.eyebrow`)}
+                  {brand.id === "sirovill"
+                    ? t(`deep.${brand.id}.eyebrow`)
+                        .replace("VILLANYSZERELÉS", "GYENGEÁRAMÚ HÁLÓZATOK")
+                        .replace("ELECTRICAL WORKS", "LOW-VOLTAGE NETWORKS")
+                    : t(`deep.${brand.id}.eyebrow`)}
                 </span>
                 <h3 className="mt-5 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
                   {t(`deep.${brand.id}.headline`)}
@@ -85,6 +106,7 @@ export const DeepDives = () => {
                   target="_blank"
                   rel="noreferrer"
                   data-testid={`deepdive-cta-${brand.id}`}
+                  onClick={() => trackEvent("deepdive_cta_click", "engagement", brand.id)}
                   className="mt-9 inline-flex items-center gap-2 rounded px-5 py-2.5 text-sm font-semibold transition-transform duration-150 ease-out hover:scale-[1.02]"
                   style={{ background: brand.color, color: ctaTextColor }}
                 >

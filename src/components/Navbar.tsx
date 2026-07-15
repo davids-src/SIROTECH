@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   const links = [
     { label: t("nav.about"), href: "#about", id: "about" },
-    { label: t("nav.references"), href: "#references", id: "references" },
+    // { label: t("nav.references"), href: "#references", id: "references" },
     { label: t("nav.contact"), href: "#contact", id: "contact" },
   ];
 
@@ -21,9 +21,10 @@ export const Navbar = () => {
       className="fixed inset-x-0 top-0 z-50 border-b border-line/60 bg-bg/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex h-16 max-w-site items-center justify-between px-6">
-        <a href="#top" data-testid="navbar-logo" className="shrink-0">
+        <a href="#top" data-testid="navbar-logo" className="shrink-0 flex items-center gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logos/sirotech.svg" alt="SIROTECH" className="h-7 w-auto" />
+          <img src="/brand/sirotech_seal.svg" alt="SIROTECH Informatikai és Biztonságtechnikai Kft. – IT, biztonságtechnika, szoftverfejlesztés, villanyszerelés – Székesfehérvár" className="h-7 w-auto" />
+          <span className="font-display text-lg font-bold tracking-normal text-ink uppercase">Sirotech</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-sm text-muted lg:flex">

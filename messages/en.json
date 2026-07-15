@@ -7,8 +7,8 @@
     "quote": "Get a Quote"
   },
   "hero": {
-    "eyebrow": "SIROTECH — Technology Services Group",
-    "headline": "One Partner.\nEvery Layer\nof Your Infrastructure.",
+    "eyebrow": "SIROTECH — IT Operations · Security Systems · Software Development · Electrical Works",
+    "headline": "One Partner.\nfor Every Layer\nof Your Infrastructure.",
     "sub": "IT operations, security systems, and custom software — delivered by specialists under one roof.",
     "cta1": "Find Your Solution",
     "cta2": "Contact Us"
@@ -25,10 +25,10 @@
   "about": {
     "eyebrow": "ABOUT SIROTECH",
     "headline": "Your technology partner from network cable to custom software.",
-    "body": "SIROTECH Kft. brings together IT managed services, physical security technology, and bespoke software development under a single legal entity and service contract. No coordination overhead between vendors — one team, one point of contact, full accountability.",
+    "body": "SIROTECH Kft. — the leading IT and security technology partner in Székesfehérvár and Fejér County — brings together managed IT and systems administration services, CCTV and alarm installation, bespoke software development, and electrical works under a single legal entity and service contract. No coordination overhead between vendors — one team, one point of contact, full accountability.",
     "stats": [
-      { "value": "10+", "label": "Years of experience" },
-      { "value": "3", "label": "Specialised sub-brands" },
+      { "value": "1 bd", "label": "Response guarantee" },
+      { "value": "{count}", "label": "service brands" },
       { "value": "1", "label": "Point of contact" }
     ]
   },
@@ -40,7 +40,8 @@
         "Managed IT services and helpdesk",
         "Network infrastructure design and operations",
         "Server & cloud operations with proactive monitoring",
-        "NIS2 compliance consulting and audit preparation"
+        "NIS2 compliance consulting and audit preparation",
+        "On-site IT support and outsourced systems administration in Székesfehérvár, Fejér County, Dunaújváros and Budapest"
       ],
       "cta": "Visit sironic.hu →"
     },
@@ -51,7 +52,8 @@
         "IP camera system design and installation",
         "Intrusion detection and alarm systems",
         "Fire detection systems with ongoing maintenance",
-        "Access control and time & attendance systems"
+        "Access control and time & attendance systems",
+        "Security technology installation in Székesfehérvár, Dunaújváros and across Fejér County"
       ],
       "cta": "Visit siroved.hu →"
     },
@@ -62,7 +64,8 @@
         "Custom web applications and client portals",
         "ERP & CRM implementation and integration",
         "Process automation and business reporting",
-        "Long-term support and continuous development"
+        "Long-term support and continuous development",
+        "Custom software development and ERP rollout for SMEs in Székesfehérvár and the Transdanubia region"
       ],
       "cta": "Visit sirosoft.hu →"
     },
@@ -73,7 +76,8 @@
         "Full-scope power installations and renovations",
         "Low-voltage, structured cabling and smart controls",
         "Industrial, commercial and office electrical works",
-        "Maintenance, safety measurements and documentation"
+        "Maintenance, safety measurements and documentation",
+        "Electrical installation and safety inspection in Székesfehérvár, Fejér County and the surrounding region"
       ],
       "cta": "Visit sirovill.hu →"
     }
@@ -140,9 +144,9 @@
     "headline": "Let's talk about your infrastructure.",
     "responseNote": "We respond to every inquiry within 1 business day.",
     "details": {
-      "email": "info@sirotech.hu",
-      "phone": "+36 ...",
-      "location": "Budapest, Hungary"
+      "email": "hello@sironic.hu",
+      "phone": "+36 70 273 5532",
+      "location": "8000 Székesfehérvár, Lövölde utca 24"
     },
     "form": {
       "company": "Company name",
@@ -166,10 +170,76 @@
     }
   },
   "footer": {
-    "brandsTitle": "Sub-brands",
+    "brandsTitle": "Service Brands",
     "navTitle": "Navigation",
     "privacy": "Privacy Policy",
-    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: ...",
+    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: 33056151-2-07 | 8000 Székesfehérvár, Lövölde utca 24",
+    "certifications": "Auth. Cert.: 07010-822/7987/2026. SZv. · Construction Reg.: 17C03049",
     "tagline": "One company. Every layer of protection."
+  },
+  "serviceAreas": {
+    "eyebrow": "SERVICE AREAS",
+    "headline": "IT operations, security systems and electrical works across Hungary",
+    "body": "Headquartered in Székesfehérvár — we deliver managed IT services, CCTV installation, alarm systems, electrical works and custom software development across Fejér County, Budapest, Transdanubia and multiple cities nationwide."
+  },
+  "whyOneHand": {
+    "eyebrow": "WHY FROM ONE PARTNER?",
+    "headline": "Predictability and simplicity for your business",
+    "pillars": [
+      {
+        "title": "Predictable pricing",
+        "body": "Fixed monthly fees, no surprise callout charges or hidden hourly rates."
+      },
+      {
+        "title": "Long-term partnership",
+        "body": "Our technology stack grows and scales seamlessly alongside your business."
+      },
+      {
+        "title": "One coordinator",
+        "body": "No more finger-pointing between subcontractors. We manage all divisions under one roof."
+      },
+      {
+        "title": "Local team",
+        "body": "Our Székesfehérvár base ensures fast, personal, and flexible on-site response."
+      }
+    ]
+  },
+  "howWeWork": {
+    "eyebrow": "HOW WE WORK?",
+    "headline": "Simple, transparent process from design to operation",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Assessment",
+        "body": "We discuss your goals in detail and audit your existing infrastructure."
+      },
+      {
+        "number": "02",
+        "title": "Written quote",
+        "body": "We provide a transparent, fixed-price quote with clear technical specifications."
+      },
+      {
+        "number": "03",
+        "title": "Implementation",
+        "body": "We install, configure, and test everything with minimal downtime."
+      },
+      {
+        "number": "04",
+        "title": "Operation / SLA",
+        "body": "We deliver ongoing proactive support, maintenance, and fast response times."
+      }
+    ]
+  },
+  "doubleCta": {
+    "b2b": {
+      "title": "For Companies / B2B",
+      "body": "IT operations, NIS2 readiness, CCTV systems, and custom software. Complex corporate infrastructure from one partner.",
+      "cta": "Request B2B Consultation →"
+    },
+    "b2c": {
+      "title": "For Individuals / B2C",
+      "body": "Security systems, alarms, CCTV, and reliable electrical installations for your home.",
+      "cta": "Request Residential Quote →"
+    }
   }
 }

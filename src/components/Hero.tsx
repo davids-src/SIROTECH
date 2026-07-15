@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { BRANDS } from "@/lib/brands";
+import { trackEvent } from "@/lib/gtag";
+
+const BRAND_ALTS: Record<string, string> = {
+  sironic: "SIRONIC – IT üzemeltetés és rendszergazda szolgáltatás Székesfehérváron és Fejér megyében",
+  siroved: "SIRO-VÉD – Kamerarendszer telepítés, biztonságtechnika és riasztók Székesfehérváron",
+  sirosoft: "SIROSOFT – Egyedi szoftverfejlesztés, CRM és ERP rendszer bevezetés cégeknek",
+  sirovill: "SIROVILL – Villanyszerelés, erősáramú kivitelezés és érintésvédelmi mérés",
+};
 
 export const Hero = () => {
   const { t } = useI18n();
@@ -57,6 +65,7 @@ export const Hero = () => {
           <a
             href="#brands"
             data-testid="hero-primary-cta"
+            onClick={() => trackEvent("hero_cta_primary", "engagement", "Explore Brands")}
             className="rounded bg-silver px-6 py-3 text-sm font-semibold text-bg transition-colors hover:bg-ink"
           >
             {t("hero.cta1")}
@@ -64,6 +73,7 @@ export const Hero = () => {
           <a
             href="#contact"
             data-testid="hero-secondary-cta"
+            onClick={() => trackEvent("hero_cta_secondary", "engagement", "Get Quote")}
             className="rounded border border-line px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-silver"
           >
             {t("hero.cta2")}
@@ -86,6 +96,7 @@ export const Hero = () => {
               <a
                 href={`#${brand.id}`}
                 data-testid={`brand-card-${brand.id}`}
+                onClick={() => trackEvent("brand_card_click", "engagement", brand.id)}
                 className="group flex h-full flex-col rounded-lg border bg-surface p-6 shadow-[0_0_28px_-14px_var(--glow)] transition-all duration-150 ease-out hover:scale-[1.02] hover:shadow-[0_0_56px_-10px_var(--glow)]"
                 style={
                   {
@@ -95,9 +106,15 @@ export const Hero = () => {
                 }
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={brand.logo} alt={brand.name} className="h-6 w-auto self-start" />
+                <img src={brand.logo} alt={BRAND_ALTS[brand.id] || brand.name} className="h-8 w-auto self-start" />
                 <p className="mt-5 flex-1 text-sm leading-relaxed text-muted">
-                  {t(`brands.${brand.id}`)}
+                  {brand.id === "sirovill"
+                    ? t(`brands.${brand.id}`)
+                        .replace("erősáram, ", "")
+                        .replace("power, ", "")
+                        .replace("Villanyszerelés:", "Gyengeáramú hálózatok:")
+                        .replace("Electrical installation:", "Low-voltage networks:")
+                    : t(`brands.${brand.id}`)}
                 </p>
                 <span
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium"
