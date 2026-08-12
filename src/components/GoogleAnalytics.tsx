@@ -12,13 +12,8 @@ function AnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  useEffect(() => {
-    if (!SITE.ga) return;
-    const url =
-      pathname +
-      (searchParams?.toString() ? `?${searchParams.toString()}` : '');
-    gtag('config', SITE.ga, { page_path: url });
-  }, [pathname, searchParams]);
+  // Let GA4 Enhanced Measurement handle page views automatically
+  // removed manual config call on pathname change to avoid double counting
 
   useEffect(() => {
     if (!SITE.ga) return;
@@ -89,9 +84,7 @@ export default function GoogleAnalytics() {
           });
 
           window.gtag('js', new Date());
-          window.gtag('config', '${SITE.ga}', {
-            send_page_view: false
-          });
+          window.gtag('config', '${SITE.ga}');
         `}
       </Script>
       <Suspense fallback={null}>

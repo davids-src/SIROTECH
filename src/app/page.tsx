@@ -22,8 +22,6 @@ export default function Home() {
         {/* 1. Hero */}
         <Hero />
         {/* 2. Brands are inside Hero (id="brands") */}
-        {/* 3. Engedélyek bizalmi blokk */}
-        <Licenses />
         {/* 4. Miért egy kézből */}
         <WhyOneHand />
         {/* 5. DeepDives — divíziónként (id="szolgaltatasok") */}
@@ -43,7 +41,9 @@ export default function Home() {
         <DoubleCta />
         {/* 12. Lefedett területek */}
         <ServiceAreas />
-        {/* 13. Kapcsolat */}
+        {/* 13. Engedélyek bizalmi blokk */}
+        <Licenses />
+        {/* 14. Kapcsolat */}
         <Contact />
       </main>
       <Footer />
