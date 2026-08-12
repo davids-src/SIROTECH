@@ -1,12 +1,16 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { Licenses } from "@/components/Licenses";
 import { WhyOneHand } from "@/components/WhyOneHand";
-import { About } from "@/components/About";
 import { DeepDives } from "@/components/DeepDives";
+import { About } from "@/components/About";
+import { WhyGrid } from "@/components/WhyGrid";
 import { HowWeWork } from "@/components/HowWeWork";
+import { FreeAssessmentCta } from "@/components/FreeAssessmentCta";
+import { Team } from "@/components/Team";
+import { References } from "@/components/References";
 import { DoubleCta } from "@/components/DoubleCta";
 import { ServiceAreas } from "@/components/ServiceAreas";
-// import { References } from "@/components/References";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -15,14 +19,31 @@ export default function Home() {
     <>
       <Navbar />
       <main>
+        {/* 1. Hero */}
         <Hero />
+        {/* 2. Brands are inside Hero (id="brands") */}
+        {/* 3. Engedélyek bizalmi blokk */}
+        <Licenses />
+        {/* 4. Miért egy kézből */}
         <WhyOneHand />
-        <About />
+        {/* 5. DeepDives — divíziónként (id="szolgaltatasok") */}
         <DeepDives />
+        {/* 6. A SIROTECH-ről + Miért a SIROTECH */}
+        <About />
+        <WhyGrid />
+        {/* 7. Hogyan dolgozunk */}
         <HowWeWork />
+        {/* 8. Ingyenes Állapotfelmérés CTA */}
+        <FreeAssessmentCta />
+        {/* 9. Kik vagyunk */}
+        <Team />
+        {/* 10. Referenciák — logófal */}
+        <References />
+        {/* 11. B2B / B2C kettős CTA */}
         <DoubleCta />
+        {/* 12. Lefedett területek */}
         <ServiceAreas />
-        {/* <References /> */}
+        {/* 13. Kapcsolat */}
         <Contact />
       </main>
       <Footer />

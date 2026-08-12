@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "@/lib/i18n";
-import Script from "next/script";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
+import { SITE } from "@/lib/config";
 
 const display = Space_Grotesk({
   subsets: ["latin", "latin-ext"],
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | SIROTECH",
   },
   description:
-    "IT üzemeltetés, rendszergazda szolgáltatás, kamerarendszer telepítés, egyedi szoftverfejlesztés és villanyszerelés – Székesfehérváron, Fejér megyében és Budapesten. Egy partner, minden technológiai réteghez.",
+    "IT üzemeltetés, rendszergazda szolgáltatás, kamerarendszer telepítés, egyedi szoftverfejlesztés és villanyszerelés – Fejér megyében, Budapesten és a Közép-Dunántúlon. Egy partner, minden technológiai réteghez.",
   keywords: [
     "IT üzemeltetés",
     "rendszergazda szolgáltatás",
@@ -43,13 +45,11 @@ export const metadata: Metadata = {
     "webalkalmazás fejlesztés",
     "villanyszerelés",
     "ipari villanyszerelés",
-    "érintésvédelmi mérés",
     "székesfehérvári IT szolgáltató",
     "fejér megyei rendszergazda",
     "székesfehérvári biztonságtechnika",
     "fejér megyei kamerarendszer telepítő",
     "székesfehérvári szoftverfejlesztő",
-    "székesfehérvári villanyszerelő cég",
     "közép-dunántúli IT partner",
     "IT outsourcing Magyarország",
     "hálózatépítés KKV",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SIROTECH – IT, biztonságtechnika, szoftverfejlesztés | Székesfehérvár",
     description:
-      "Egy partner az infrastruktúrája minden rétegéhez – Székesfehérvár, Fejér megye, Budapest.",
+      "Egy partner az infrastruktúrája minden rétegéhez – Fejér megye, Budapest, Közép-Dunántúl.",
   },
 };
 
@@ -89,10 +89,12 @@ const organizationSchema = {
   name: "SIROTECH Informatikai és Biztonságtechnikai Kft.",
   legalName: "SIROTECH Informatikai és Biztonságtechnikai Kft.",
   taxID: "33056151-2-07",
+  identifier: "07-09-037603",
   url: "https://sirotech.hu",
-  email: "info@sirotech.hu",
+  telephone: "+36 70 273 5532",
+  email: "hello@sironic.hu",
   logo: "https://sirotech.hu/brand/sirotech_seal.svg",
-  foundingDate: "2026",
+  foundingDate: "2021",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Lövölde utca 24",
@@ -107,51 +109,37 @@ const organizationSchema = {
     longitude: "18.4231",
   },
   areaServed: [
-    { "@type": "City", name: "Székesfehérvár" },
     { "@type": "AdministrativeArea", name: "Fejér megye" },
-    { "@type": "City", name: "Dunaújváros" },
-    { "@type": "City", name: "Bicske" },
-    { "@type": "City", name: "Mór" },
-    { "@type": "City", name: "Gárdony" },
-    { "@type": "City", name: "Martonvásár" },
-    { "@type": "City", name: "Sárbogárd" },
-    { "@type": "City", name: "Velence" },
-    { "@type": "City", name: "Polgárdi" },
-    { "@type": "City", name: "Aba" },
-    { "@type": "City", name: "Bodajk" },
-    { "@type": "City", name: "Enying" },
+    { "@type": "City", name: "Székesfehérvár" },
     { "@type": "City", name: "Budapest" },
-    { "@type": "City", name: "Győr" },
-    { "@type": "City", name: "Veszprém" },
-    { "@type": "City", name: "Tatabánya" },
-    { "@type": "City", name: "Kecskemét" },
-    { "@type": "City", name: "Érd" },
-    { "@type": "City", name: "Dunaharaszti" },
-    { "@type": "AdministrativeArea", name: "Pest megye" },
     { "@type": "AdministrativeArea", name: "Közép-Dunántúl" },
   ],
   serviceType: [
     "IT üzemeltetés és rendszergazda szolgáltatás",
     "Hálózati infrastruktúra kiépítés",
-    "NIS2 megfelelőségi tanácsadás és audit-felkészítés",
+    "NIS2 megfelelőségi tanácsadás",
     "Kamerarendszer telepítés és biztonságtechnika",
     "Tűzjelző rendszer kiépítés és karbantartás",
     "Beléptető rendszer telepítés",
     "Egyedi szoftverfejlesztés és webalkalmazás fejlesztés",
     "ERP és CRM rendszer bevezetés és integráció",
-    "Villanyszerelés és érintésvédelmi mérés",
-    "Ipari elektromos kivitelezés",
+    "Villanyszerelés",
   ],
   hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
-      name: "Hatósági bizonyítvány – Biztonságtechnikai szerelői engedély",
+      name: "Rendőrhatósági biztonságtechnikai engedély",
       identifier: "07010-822/7987/2026. SZv.",
     },
     {
       "@type": "EducationalOccupationalCredential",
-      name: "Építési nyilvántartás",
+      name: "Építőipari nyilvántartás",
       identifier: "17C03049",
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "Tűzvédelmi szakvizsga",
+      identifier: "Érvényes",
     },
   ],
   subOrganization: [
@@ -159,14 +147,14 @@ const organizationSchema = {
       "@type": "Organization",
       name: "SIRONIC",
       description:
-        "IT üzemeltetés, rendszergazda szolgáltatás, hálózatépítés, NIS2 megfelelőségi tanácsadás – Székesfehérvár és Fejér megye",
-      url: "https://sironic.hu",
+        "IT üzemeltetés, rendszergazda szolgáltatás, hálózatépítés, NIS2 megfelelőségi tanácsadás – Fejér megye és Budapest",
+      url: "https://sironic.eu",
     },
     {
       "@type": "Organization",
       name: "SIRO-VÉD",
       description:
-        "Biztonságtechnika: kamerarendszer telepítés, riasztórendszer, tűzjelző, beléptető rendszer – Székesfehérvár és Fejér megye",
+        "Biztonságtechnika: kamerarendszer telepítés, riasztórendszer, tűzjelző, beléptető rendszer – Fejér megye és Budapest",
       url: "https://siroved.hu",
     },
     {
@@ -180,8 +168,7 @@ const organizationSchema = {
       "@type": "Organization",
       name: "SIROVILL",
       description:
-        "Villanyszerelés, ipari elektromos kivitelezés, érintésvédelmi mérés – Székesfehérvár és Fejér megye",
-      url: "https://sirovill.hu",
+        "Villanyszerelés, ipari elektromos kivitelezés – Fejér megye és Budapest",
     },
   ],
 };
@@ -200,23 +187,15 @@ export default function RootLayout({
       <body
         className={`${display.variable} ${body.variable} ${mono.variable} font-body bg-bg text-ink`}
       >
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-X17WZ915P9"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-X17WZ915P9');
-          `}
-        </Script>
+        <GoogleAnalytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <I18nProvider>{children}</I18nProvider>
+        <I18nProvider>
+          {children}
+          <CookieBanner />
+        </I18nProvider>
       </body>
     </html>
   );

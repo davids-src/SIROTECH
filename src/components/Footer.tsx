@@ -1,20 +1,50 @@
 "use client";
 
-import { Linkedin } from "lucide-react";
+import { Linkedin, Facebook, Instagram, MapPin } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { BRANDS } from "@/lib/brands";
 import { trackEvent } from "@/lib/gtag";
+import { SITE } from "@/lib/config";
 
 export const Footer = () => {
   const { t } = useI18n();
+  const year = new Date().getFullYear();
 
   const navLinks = [
     { label: t("nav.services"), href: "#brands" },
-    { label: t("nav.about"), href: "#about" },
-    // { label: t("nav.references"), href: "#references" },
-    { label: t("nav.contact"), href: "#contact" },
+    { label: t("nav.about"), href: "#kik-vagyunk" },
+    { label: t("nav.contact"), href: "#kapcsolat" },
     { label: t("footer.privacy"), href: "/adatvedelem" },
   ];
+
+  const socialLinks = [
+    {
+      id: "facebook",
+      href: SITE.social.facebook,
+      icon: Facebook,
+      label: "Facebook",
+    },
+    {
+      id: "linkedin",
+      href: SITE.social.linkedin,
+      icon: Linkedin,
+      label: "LinkedIn",
+    },
+    {
+      id: "instagram",
+      href: SITE.social.instagram,
+      icon: Instagram,
+      label: "Instagram",
+    },
+    {
+      id: "google",
+      href: SITE.social.google,
+      icon: MapPin,
+      label: "Google Cégprofil",
+    },
+  ].filter((s) => !!s.href);
+
+  const legalText = t("footer.legal").replace("{year}", year.toString());
 
   return (
     <footer data-testid="footer" className="border-t border-line/50 bg-surface/40">
@@ -23,43 +53,64 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2.5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/sirotech_seal.svg" alt="SIROTECH Informatikai és Biztonságtechnikai Kft. – IT üzemeltetés és biztonságtechnika, Székesfehérvár" className="h-7 w-auto" />
-              <span className="font-display text-lg font-bold tracking-normal text-ink uppercase">Sirotech</span>
+              <img
+                src="/brand/sirotech_seal.svg"
+                alt="SIROTECH Informatikai és Biztonságtechnikai Kft. – IT üzemeltetés és biztonságtechnika, Székesfehérvár"
+                className="h-7 w-auto"
+              />
+              <span className="font-display text-lg font-bold tracking-normal text-ink uppercase">
+                Sirotech
+              </span>
             </div>
             <p className="mt-5 max-w-xs text-sm text-muted">{t("footer.tagline")}</p>
             <div className="mt-5 space-y-2 text-xs font-mono text-muted/80">
               <p className="flex items-center gap-2">
                 <span className="text-muted/50 uppercase tracking-wider text-[10px]">Email:</span>
                 <a
-                  href="mailto:hello@sironic.hu"
-                  onClick={() => trackEvent("footer_email_click", "engagement", "hello@sironic.hu")}
+                  href={`mailto:${SITE.email}`}
+                  onClick={() =>
+                    trackEvent("footer_email_click", "engagement", SITE.email)
+                  }
                   className="transition-colors hover:text-ink hover:underline"
                 >
-                  hello@sironic.hu
+                  {SITE.email}
                 </a>
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-muted/50 uppercase tracking-wider text-[10px]">Tel:</span>
                 <a
-                  href="tel:+36702735532"
-                  onClick={() => trackEvent("footer_phone_click", "engagement", "+36702735532")}
+                  href={`tel:${SITE.phone.replace(/\s+/g, "")}`}
+                  onClick={() =>
+                    trackEvent("footer_phone_click", "engagement", SITE.phone)
+                  }
                   className="transition-colors hover:text-ink hover:underline"
                 >
-                  +36 70 273 5532
+                  {SITE.phone}
                 </a>
               </p>
             </div>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              data-testid="footer-linkedin"
-              aria-label="LinkedIn"
-              onClick={() => trackEvent("social_linkedin_click", "engagement", "LinkedIn")}
-              className="mt-6 inline-flex h-10 w-10 items-center justify-center rounded border border-line text-muted transition-colors hover:border-silver hover:text-ink"
-            >
-              <Linkedin size={17} />
-            </a>
+
+            {/* Social icon row */}
+            {socialLinks.length > 0 && (
+              <div className="mt-6 flex items-center gap-2">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-testid={`footer-social-${social.id}`}
+                    aria-label={social.label}
+                    onClick={() =>
+                      trackEvent(`social_${social.id}_click`, "engagement", social.label)
+                    }
+                    className="inline-flex h-10 w-10 items-center justify-center rounded border border-line text-muted transition-colors hover:border-silver hover:text-ink"
+                  >
+                    <social.icon size={17} />
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           <div>
@@ -74,6 +125,11 @@ export const Footer = () => {
                   >
                     <span className="h-1.5 w-1.5 rounded-full" style={{ background: brand.color }} />
                     {brand.name}
+                    {brand.comingSoon && (
+                      <span className="font-mono text-[9px] uppercase tracking-widest text-muted/60">
+                        Soon
+                      </span>
+                    )}
                   </a>
                 </li>
               ))}
@@ -95,8 +151,11 @@ export const Footer = () => {
         </div>
 
         <div className="mt-14 border-t border-line/50 pt-7 flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
-          <p className="font-mono text-[11px] leading-relaxed text-muted/80" data-testid="footer-legal">
-            {t("footer.legal")}
+          <p
+            className="font-mono text-[11px] leading-relaxed text-muted/80"
+            data-testid="footer-legal"
+          >
+            {legalText}
           </p>
           <p className="font-mono text-[11px] leading-relaxed text-muted/60">
             {t("footer.certifications")}

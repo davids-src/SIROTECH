@@ -10,8 +10,8 @@
     "eyebrow": "SIROTECH — IT üzemeltetés · Biztonságtechnika · Szoftverfejlesztés · Villanyszerelés",
     "headline": "Egy partner.\naz Infrastruktúrája\nminden rétegéhez.",
     "sub": "IT üzemeltetés, biztonságtechnika és egyedi szoftverfejlesztés — specialistáktól, egy kézből.",
-    "cta1": "Találja meg a megoldást",
-    "cta2": "Kapcsolatfelvétel"
+    "cta1": "Kérem az ingyenes felmérést",
+    "cta2": "Szolgáltatásaink"
   },
   "brands": {
     "explore": "Irány a",
@@ -25,11 +25,11 @@
   "about": {
     "eyebrow": "A SIROTECH-RŐL",
     "headline": "Technológiai partnere a hálózati kábeltől az egyedi szoftverig.",
-    "body": "A SIROTECH Kft. — Székesfehérvár és Fejér megye vezető IT- és biztonságtechnikai partnere — egyetlen jogi személy és egyetlen szolgáltatási szerződés keretében egyesíti a rendszergazda és IT üzemeltetési szolgáltatásokat, a kamerarendszerek és riasztók kivitelezését, az egyedi szoftverfejlesztést, valamint a villanyszerelési és elektromos kivitelezési munkákat. Nincs egyeztetési teher a beszállítók között — egy csapat, egy kapcsolattartó, teljes felelősségvállalás.",
+    "body": "A SIROTECH Kft. — székesfehérvári székhelyű IT- és biztonságtechnikai partner — egyetlen jogi személy és egyetlen szolgáltatási szerződés keretében egyesíti a rendszergazda és IT üzemeltetési szolgáltatásokat, a kamerarendszerek és riasztók kivitelezését, az egyedi szoftverfejlesztést, valamint a villanyszerelési és elektromos kivitelezési munkákat. Nincs egyeztetési teher a beszállítók között — egy csapat, egy kapcsolattartó, teljes felelősségvállalás.",
     "stats": [
-      { "value": "1 mnd", "label": "Válaszidő-garancia" },
+      { "value": "1 munkanap", "label": "Válaszidő megkeresésre" },
       { "value": "{count}", "label": "szolgáltatási márka" },
-      { "value": "1", "label": "Kapcsolattartó" }
+      { "value": "1", "label": "Kapcsolattartó minden divízióhoz" }
     ]
   },
   "deep": {
@@ -41,9 +41,9 @@
         "Hálózati infrastruktúra tervezése és üzemeltetése",
         "Szerver- és felhőüzemeltetés, proaktív monitoring",
         "NIS2 megfelelőségi tanácsadás és audit-felkészítés",
-        "Helyszíni IT support és külsős rendszergazda Székesfehérváron, Fejér megyében, Dunaújvárosban és Budapesten"
+        "Helyszíni IT support és külsős rendszergazda Fejér megyében, Budapesten és a Közép-Dunántúlon"
       ],
-      "cta": "Irány a sironic.hu →"
+      "cta": "Irány a sironic.eu →"
     },
     "siroved": {
       "eyebrow": "SIRO-VÉD — BIZTONSÁGTECHNIKA",
@@ -53,7 +53,7 @@
         "Behatolásjelző és riasztórendszerek",
         "Tűzjelző rendszerek kivitelezése és karbantartása",
         "Beléptetőrendszerek és munkaidő-nyilvántartás",
-        "Biztonságtechnikai kivitelezés Székesfehérváron, Dunaújvárosban és Fejér megye egész területén"
+        "Biztonságtechnikai kivitelezés Fejér megyében, Budapesten és a Közép-Dunántúlon"
       ],
       "cta": "Irány a siroved.hu →"
     },
@@ -65,7 +65,7 @@
         "ERP- és CRM-rendszerek bevezetése, integrációja",
         "Folyamatautomatizálás és üzleti riportok",
         "Hosszú távú támogatás és továbbfejlesztés",
-        "Egyedi szoftverfejlesztés és ERP bevezetés KKV-knak Székesfehérváron és a Közép-Dunántúlon"
+        "Egyedi szoftverfejlesztés és ERP bevezetés KKV-knak Fejér megyében, Budapesten és a Közép-Dunántúlon"
       ],
       "cta": "Irány a sirosoft.hu →"
     },
@@ -76,10 +76,10 @@
         "Teljes körű erősáramú kivitelezés és felújítás",
         "Gyengeáram, struktúrált hálózat és okos vezérlés",
         "Ipari, kereskedelmi és irodaházi villanyszerelés",
-        "Karbantartás, érintésvédelmi mérések és jegyzőkönyvek",
-        "Villanyszerelés és érintésvédelmi felülvizsgálat Székesfehérváron, Fejér megyében és a régióban"
+        "Karbantartás és hibaelhárítás",
+        "Villanyszerelési munkák Fejér megyében, Budapesten és a Közép-Dunántúlon"
       ],
-      "cta": "Irány a sirovill.hu →"
+      "cta": "Érdeklődöm a villanyszerelésről →"
     }
   },
   "why": {
@@ -92,15 +92,15 @@
       },
       {
         "title": "Engedélyek és minősítések",
-        "body": "Biztonságtechnikai szerelői engedély. NIS2 megfelelőségi tanácsadás. Tűzvédelmi szakképesítés."
+        "body": "Rendőrhatósági biztonságtechnikai engedély, építőipari nyilvántartási szám és tűzvédelmi szakvizsga. Felelősségbiztosítással dolgozunk."
       },
       {
-        "title": "1 munkanapos válaszidő SLA",
-        "body": "Dedikált kapcsolattartó és eszkalációs útvonal minden ügyfelünknek."
+        "title": "1 munkanapos válaszidő",
+        "body": "Minden megkeresésre 1 munkanapon belül válaszolunk. Szerződéses ügyfeleinknek 24/7 ügyeletet és azonnali telefonos reakciót biztosítunk kritikus hiba esetén."
       },
       {
         "title": "Magyarországi székhely",
-        "body": "Helyszíni támogatás Budapesten és környékén, távoli támogatás országosan."
+        "body": "Helyszíni támogatás Fejér megyében, Budapesten és a Közép-Dunántúlon, távoli támogatás országosan."
       },
       {
         "title": "Skálázható együttműködés",
@@ -108,36 +108,84 @@
       },
       {
         "title": "Átlátható árazás",
-        "body": "Fix havidíjak, meglepetés-kiszállási díjak nélkül. Becslés 3 perc alatt."
+        "body": "Fix havidíjak, meglepetés-kiszállási díjak nélkül. Írásos árajánlat 1 héten belül."
       }
     ]
   },
-  "pricing": {
-    "headline": "Mennyibe kerül a kiszervezett IT?",
-    "sub": "Töltse ki 15 kérdéses űrlapunkat, és 3 percen belül tájékoztató árajánlatot kap. Kötelezettségvállalás nélkül.",
-    "cta": "Árajánlat kalkulátor indítása →",
-    "note": "Az árazás az Ön cégméretéhez, eszközszámához és a kívánt szolgáltatási szinthez igazodik."
-  },
-  "references": {
-    "eyebrow": "REFERENCIÁK",
-    "headline": "Magyarországi vállalkozások bizalmával",
+  "licenses": {
+    "eyebrow": "ENGEDÉLYEK ÉS HÁTTÉR",
+    "headline": "Engedélyes, biztosított kivitelező",
+    "lead": "Egyetlen jogi személy, egyetlen szerződés — és minden szükséges engedély a háttérben.",
     "items": [
       {
-        "company": "Horizont Trans Kft.",
-        "industry": "Logisztika",
-        "quote": "A SIROTECH egy kézben tartja a teljes telephelyünk IT-jét és kamerarendszerét. Egy hívás, és minden kérdés megoldódik."
+        "title": "Rendőrhatósági engedély",
+        "value": "07010-822/7987/2026. SZv.",
+        "body": "Biztonságtechnikai rendszerek telepítéséhez. Ennek hiányában a biztosító nem fogadja el a telepített rendszert."
       },
       {
-        "company": "MediPlan Egészségközpont",
-        "industry": "Egészségügy",
-        "quote": "A NIS2 felkészülésünket is ők vezették végig. Profi, dokumentált, határidőre szállított munka."
+        "title": "Építőipari nyilvántartás",
+        "value": "17C03049",
+        "body": "Kivitelezői tevékenység nyilvántartási száma."
       },
       {
-        "company": "FerroBuild Zrt.",
-        "industry": "Építőipar",
-        "quote": "Az egyedi munkalap-kezelő szoftverük heti több órát spórol az adminisztrációnkon. A támogatásuk példaértékű."
+        "title": "Tűzvédelmi szakvizsga",
+        "value": "Érvényes",
+        "body": "Tűzjelző rendszerek telepítéséhez és karbantartásához."
+      },
+      {
+        "title": "Felelősségbiztosítás",
+        "value": "Rendelkezünk",
+        "body": "Kivitelezési munkáinkra érvényes szakmai felelősségbiztosítás."
       }
     ]
+  },
+  "freeAssessment": {
+    "eyebrow": "INGYENES ÁLLAPOTFELMÉRÉS",
+    "headline": "Kezdjük egy díjmentes felméréssel",
+    "lead": "Kimegyünk Önhöz, átvizsgáljuk a meglévő rendszereket, és egy héten belül írásos összefoglalót, valamint árazott javaslatot küldünk. A felmérés díjmentes és kötelezettségmentes.",
+    "bullets": [
+      "Informatikai rendszer: eszközpark, szoftverek, hálózat, NIS2-kockázatok",
+      "Biztonságtechnika: kamera- és riasztórendszer, védtelen pontok",
+      "Írásos összefoglaló és tételes árajánlat egy héten belül",
+      "1 munkanapon belül jelentkezünk az időpont-egyeztetésre"
+    ],
+    "cta": "Kérem az ingyenes felmérést",
+    "microcopy": "Nincs kötelezettség és nincs nyomulás a helyszínen — a javaslat kézhezvétele után Ön dönti el, kér-e tőlünk további munkát."
+  },
+  "team": {
+    "eyebrow": "A CÉG MÖGÖTT",
+    "headline": "Kik vagyunk",
+    "body": "A SIROTECH-et Skoda Dávid és Tóth Tamás vezeti. 2021 óta dolgozunk informatikai és biztonságtechnikai területen — gyártó- és multinacionális környezetben szerzett tapasztalat után. 2023 óta önálló vállalkozásként, 2026-tól SIROTECH Informatikai és Biztonságtechnikai Kft. néven.\n\nMa több mint 25 vállalkozás technológiai hátterét biztosítjuk, négy szakterületen. A felmérést és a munkát személyesen végezzük — nincs közvetítő, nincs kiszervezés.",
+    "members": [
+      {
+        "name": "Skoda Dávid",
+        "role": "Biztonságtechnikai és rendszergazdai divízió vezető",
+        "photo": "/team/david.png"
+      },
+      {
+        "name": "Tóth Tamás",
+        "role": "Szoftverfejlesztési divízió vezető",
+        "photo": "/team/tomi.png"
+      }
+    ]
+  },
+  "references": {
+    "eyebrow": "AKIKKEL DOLGOZUNK",
+    "headline": "Magyarországi vállalkozások bizalmával",
+    "lead": "2021 óta dolgozunk informatikai és biztonságtechnikai területen. Ma több mint 25 vállalkozás technológiai hátterét biztosítjuk.",
+    "stats": [
+      { "value": "2021", "label": "óta a szakmában" },
+      { "value": "25+", "label": "aktív ügyfél" },
+      { "value": "50+", "label": "lezárt projekt" },
+      { "value": "4", "label": "szolgáltatási divízió" }
+    ],
+    "partners": [
+      { "name": "Bocskai", "logo": "/partners/kai-alba-flexum.jpg" },
+      { "name": "Kerámia Dental", "logo": "/partners/keramiadental-logo.png" },
+      { "name": "Tűzhal", "logo": "/partners/tuzhal.png" },
+      { "name": "Sport Hungary", "logo": "/partners/MDSZ.png" }
+    ],
+    "testimonials": []
   },
   "contact": {
     "eyebrow": "KAPCSOLAT",
@@ -149,10 +197,12 @@
       "location": "8000 Székesfehérvár, Lövölde utca 24"
     },
     "form": {
-      "company": "Cégnév",
+      "interest": "Érdeklődési terület",
+      "interestRequired": "Az érdeklődési terület megadása kötelező",
+      "company": "Cégnév / Név",
       "name": "Név",
       "email": "E-mail",
-      "interest": "Érdeklődési terület",
+      "phone": "Telefonszám (opcionális)",
       "message": "Üzenet",
       "options": [
         "SIRONIC – IT üzemeltetés",
@@ -161,10 +211,12 @@
         "SIROVILL – Villanyszerelés",
         "Egyéb / Még nem tudom"
       ],
+      "gdpr": "Elolvastam és elfogadom az <a href=\"/adatvedelem\">Adatkezelési tájékoztatót</a>.",
+      "gdprRequired": "Az adatkezelési tájékoztató elfogadása kötelező.",
       "submit": "Üzenet küldése →",
       "sending": "Küldés...",
       "success": "Köszönjük! Üzenetét megkaptuk, 1 munkanapon belül jelentkezünk.",
-      "error": "Hiba történt a küldés során. Kérjük, próbálja újra, vagy írjon az info@sirotech.hu címre.",
+      "error": "Hiba történt a küldés során. Kérjük, próbálja újra, vagy írjon a hello@sironic.hu címre.",
       "required": "Kötelező mező",
       "invalidEmail": "Érvénytelen e-mail cím"
     }
@@ -173,14 +225,14 @@
     "brandsTitle": "Szolgáltatási márkák",
     "navTitle": "Navigáció",
     "privacy": "Adatvédelmi tájékoztató",
-    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: 33056151-2-07 | 8000 Székesfehérvár, Lövölde utca 24",
+    "legal": "© {year} SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: 33056151-2-07 | Cégjegyzékszám: 07-09-037603 | Nyilvántartó: Székesfehérvári Törvényszék Cégbírósága | 8000 Székesfehérvár, Lövölde utca 24",
     "certifications": "Hat. Biz.: 07010-822/7987/2026. SZv. · Épít. nyilv.: 17C03049",
     "tagline": "Egy cég. A védelem minden rétege."
   },
   "serviceAreas": {
     "eyebrow": "LEFEDETT TERÜLETEK",
     "headline": "IT üzemeltetés, biztonságtechnika és villanyszerelés az alábbi területeken",
-    "body": "Székhelyünk Székesfehérváron van — rendszergazda és IT outsourcing, kamerarendszer telepítés, riasztószerelés, villanyszerelés és szoftverfejlesztés szolgáltatásainkat Fejér megye teljes területén, Budapesten, a Közép-Dunántúlon és az ország több városában nyújtjuk."
+    "body": "Székhelyünk Székesfehérváron van — rendszergazda és IT outsourcing, kamerarendszer telepítés, riasztószerelés, villanyszerelés és szoftverfejlesztés szolgáltatásainkat Fejér megyében, Budapesten és a Közép-Dunántúlon nyújtjuk."
   },
   "whyOneHand": {
     "eyebrow": "MIÉRT EGY KÉZBŐL?",
@@ -200,7 +252,7 @@
       },
       {
         "title": "Helyi csapat",
-        "body": "Székesfehérvári bázisunk biztosítja a gyors, személyes és rugalmas helyszíni reakciót."
+        "body": "Fejér megyében, Budapesten és a Közép-Dunántúlon gyors, személyes és rugalmas helyszíni reakció."
       }
     ]
   },
@@ -241,5 +293,12 @@
       "body": "Biztonsági rendszerek, riasztók, kamerarendszerek és megbízható erősáramú villanyszerelés otthonába.",
       "cta": "Lakossági ajánlatkérés →"
     }
+  },
+  "cookie": {
+    "title": "Sütiket használunk",
+    "body": "A weboldal Google Analytics-et használ a látogatói statisztikákhoz. Az adatok névtelenül kerülnek feldolgozásra. Részletek az",
+    "bodyLink": "adatvédelmi tájékoztatóban",
+    "accept": "Elfogadom",
+    "decline": "Csak szükségesek"
   }
 }

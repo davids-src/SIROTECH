@@ -7,10 +7,10 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const schema = z.object({
+  interest: z.string().min(1).max(200),
   company: z.string().min(1).max(200),
-  name: z.string().min(1).max(200),
   email: z.string().email(),
-  interests: z.array(z.string()).default([]),
+  phone: z.string().max(50).optional().default(""),
   message: z.string().max(5000).optional().default(""),
 });
 
@@ -53,15 +53,15 @@ async function sendEmail(record: ContactRecord): Promise<boolean> {
 
     await transporter.sendMail({
       from: process.env.SMTP_FROM ?? "noreply@sirotech.hu",
-      to: process.env.CONTACT_INBOX ?? "info@sirotech.hu",
+      to: process.env.CONTACT_INBOX ?? "hello@sironic.hu",
       replyTo: record.email,
       subject: `[sirotech.hu] Új megkeresés – ${record.company}`,
       text:
         `Új kapcsolatfelvételi üzenet érkezett a sirotech.hu oldalról\n\n` +
-        `Cégnév: ${record.company}\n` +
-        `Név: ${record.name}\n` +
+        `Érdeklődési terület: ${record.interest}\n` +
+        `Cégnév / Név: ${record.company}\n` +
         `E-mail: ${record.email}\n` +
-        `Érdeklődési terület: ${record.interests.length ? record.interests.join(", ") : "-"}\n\n` +
+        `Telefon: ${record.phone || "-"}\n\n` +
         `Üzenet:\n${record.message || "-"}\n\n` +
         `Időpont: ${record.created_at}`,
     });

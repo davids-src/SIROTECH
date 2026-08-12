@@ -10,7 +10,7 @@ const BRAND_ALTS: Record<string, string> = {
   sironic: "SIRONIC – IT üzemeltetés és rendszergazda szolgáltatás Székesfehérváron és Fejér megyében",
   siroved: "SIRO-VÉD – Kamerarendszer telepítés, biztonságtechnika és riasztók Székesfehérváron",
   sirosoft: "SIROSOFT – Egyedi szoftverfejlesztés, CRM és ERP rendszer bevezetés cégeknek",
-  sirovill: "SIROVILL – Villanyszerelés, erősáramú kivitelezés és érintésvédelmi mérés",
+  sirovill: "SIROVILL – Villanyszerelés, erősáramú kivitelezés Fejér megyében és Budapesten",
 };
 
 export const Hero = () => {
@@ -63,17 +63,17 @@ export const Hero = () => {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a
-            href="#brands"
+            href="#ingyenes-felmeres"
             data-testid="hero-primary-cta"
-            onClick={() => trackEvent("hero_cta_primary", "engagement", "Explore Brands")}
+            onClick={() => trackEvent("hero_cta_primary", "engagement", "Free Assessment")}
             className="rounded bg-silver px-6 py-3 text-sm font-semibold text-bg transition-colors hover:bg-ink"
           >
             {t("hero.cta1")}
           </a>
           <a
-            href="#contact"
+            href="#brands"
             data-testid="hero-secondary-cta"
-            onClick={() => trackEvent("hero_cta_secondary", "engagement", "Get Quote")}
+            onClick={() => trackEvent("hero_cta_secondary", "engagement", "Services")}
             className="rounded border border-line px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-silver"
           >
             {t("hero.cta2")}
@@ -94,10 +94,12 @@ export const Hero = () => {
               transition={{ duration: 0.5, delay: 0.45 + index * 0.06, ease: "easeOut" }}
             >
               <a
-                href={`#${brand.id}`}
+                href={brand.comingSoon ? "#kapcsolat" : `#${brand.id}`}
                 data-testid={`brand-card-${brand.id}`}
-                onClick={() => trackEvent("brand_card_click", "engagement", brand.id)}
-                className="group flex h-full flex-col rounded-lg border bg-surface p-6 shadow-[0_0_28px_-14px_var(--glow)] transition-all duration-150 ease-out hover:scale-[1.02] hover:shadow-[0_0_56px_-10px_var(--glow)]"
+                onClick={() =>
+                  trackEvent("brand_card_click", "engagement", brand.id)
+                }
+                className="group relative flex h-full flex-col rounded-lg border bg-surface p-6 shadow-[0_0_28px_-14px_var(--glow)] transition-all duration-150 ease-out hover:scale-[1.02] hover:shadow-[0_0_56px_-10px_var(--glow)]"
                 style={
                   {
                     "--glow": brand.color,
@@ -105,22 +107,32 @@ export const Hero = () => {
                   } as React.CSSProperties
                 }
               >
+                {brand.comingSoon && (
+                  <span
+                    className="absolute right-3 top-3 rounded border px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest font-semibold"
+                    style={{
+                      color: brand.color,
+                      borderColor: `${brand.color}50`,
+                      background: `${brand.color}15`,
+                    }}
+                  >
+                    {t("brands.soon")}
+                  </span>
+                )}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={brand.logo} alt={BRAND_ALTS[brand.id] || brand.name} className="h-8 w-auto self-start" />
+                <img
+                  src={brand.logo}
+                  alt={BRAND_ALTS[brand.id] || brand.name}
+                  className="h-8 w-auto self-start"
+                />
                 <p className="mt-5 flex-1 text-sm leading-relaxed text-muted">
-                  {brand.id === "sirovill"
-                    ? t(`brands.${brand.id}`)
-                        .replace("erősáram, ", "")
-                        .replace("power, ", "")
-                        .replace("Villanyszerelés:", "Gyengeáramú hálózatok:")
-                        .replace("Electrical installation:", "Low-voltage networks:")
-                    : t(`brands.${brand.id}`)}
+                  {t(`brands.${brand.id}`)}
                 </p>
                 <span
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium"
                   style={{ color: brand.color }}
                 >
-                  {t("brands.explore")} {brand.name}
+                  {brand.comingSoon ? t("brands.soon") : `${t("brands.explore")} ${brand.name}`}
                   <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
                 </span>
               </a>

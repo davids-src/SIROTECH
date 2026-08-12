@@ -10,8 +10,8 @@
     "eyebrow": "SIROTECH — IT Operations · Security Systems · Software Development · Electrical Works",
     "headline": "One Partner.\nfor Every Layer\nof Your Infrastructure.",
     "sub": "IT operations, security systems, and custom software — delivered by specialists under one roof.",
-    "cta1": "Find Your Solution",
-    "cta2": "Contact Us"
+    "cta1": "Request a Free Assessment",
+    "cta2": "Our Services"
   },
   "brands": {
     "explore": "Explore",
@@ -19,17 +19,17 @@
     "siroved": "Security systems: CCTV, alarms, fire detection and access control.",
     "sirosoft": "Custom software development, web applications, ERP & CRM systems.",
     "sirovill": "Electrical installation: power, low-voltage, industrial and commercial works.",
-    "soon": "More coming soon",
+    "soon": "Coming Soon",
     "soonDesc": "The SIROTECH brand family keeps growing — new specialisations are on the way."
   },
   "about": {
     "eyebrow": "ABOUT SIROTECH",
     "headline": "Your technology partner from network cable to custom software.",
-    "body": "SIROTECH Kft. — the leading IT and security technology partner in Székesfehérvár and Fejér County — brings together managed IT and systems administration services, CCTV and alarm installation, bespoke software development, and electrical works under a single legal entity and service contract. No coordination overhead between vendors — one team, one point of contact, full accountability.",
+    "body": "SIROTECH Kft. — a Székesfehérvár-based IT and security technology partner — brings together managed IT and systems administration services, CCTV and alarm installation, bespoke software development, and electrical works under a single legal entity and service contract. No coordination overhead between vendors — one team, one point of contact, full accountability.",
     "stats": [
-      { "value": "1 bd", "label": "Response guarantee" },
+      { "value": "1 business day", "label": "Response time" },
       { "value": "{count}", "label": "service brands" },
-      { "value": "1", "label": "Point of contact" }
+      { "value": "1", "label": "Point of contact per division" }
     ]
   },
   "deep": {
@@ -41,9 +41,9 @@
         "Network infrastructure design and operations",
         "Server & cloud operations with proactive monitoring",
         "NIS2 compliance consulting and audit preparation",
-        "On-site IT support and outsourced systems administration in Székesfehérvár, Fejér County, Dunaújváros and Budapest"
+        "On-site IT support in Fejér County, Budapest and the Transdanubia region"
       ],
-      "cta": "Visit sironic.hu →"
+      "cta": "Visit sironic.eu →"
     },
     "siroved": {
       "eyebrow": "SIRO-VÉD — SECURITY SYSTEMS",
@@ -53,7 +53,7 @@
         "Intrusion detection and alarm systems",
         "Fire detection systems with ongoing maintenance",
         "Access control and time & attendance systems",
-        "Security technology installation in Székesfehérvár, Dunaújváros and across Fejér County"
+        "Security technology installation in Fejér County, Budapest and the Transdanubia region"
       ],
       "cta": "Visit siroved.hu →"
     },
@@ -65,7 +65,7 @@
         "ERP & CRM implementation and integration",
         "Process automation and business reporting",
         "Long-term support and continuous development",
-        "Custom software development and ERP rollout for SMEs in Székesfehérvár and the Transdanubia region"
+        "Custom software development for SMEs in Fejér County, Budapest and the Transdanubia region"
       ],
       "cta": "Visit sirosoft.hu →"
     },
@@ -76,10 +76,10 @@
         "Full-scope power installations and renovations",
         "Low-voltage, structured cabling and smart controls",
         "Industrial, commercial and office electrical works",
-        "Maintenance, safety measurements and documentation",
-        "Electrical installation and safety inspection in Székesfehérvár, Fejér County and the surrounding region"
+        "Maintenance and troubleshooting",
+        "Electrical works in Fejér County, Budapest and the Transdanubia region"
       ],
-      "cta": "Visit sirovill.hu →"
+      "cta": "Enquire about electrical works →"
     }
   },
   "why": {
@@ -92,15 +92,15 @@
       },
       {
         "title": "Licensed & certified",
-        "body": "Security technology installer permit. NIS2 compliance consulting. Fire protection qualification."
+        "body": "Police-authority security installation permit, construction registration number and fire protection qualification. We carry professional liability insurance."
       },
       {
-        "title": "1 business day response SLA",
-        "body": "Dedicated account manager and escalation path for every client."
+        "title": "1 business day response time",
+        "body": "We respond to every inquiry within 1 business day. Contract clients receive 24/7 on-call support and immediate phone response for critical issues."
       },
       {
         "title": "Based in Hungary",
-        "body": "On-site support across Budapest and surroundings, remote support nationwide."
+        "body": "On-site support in Fejér County, Budapest and the Transdanubia region, remote support nationwide."
       },
       {
         "title": "Scalable engagements",
@@ -108,36 +108,84 @@
       },
       {
         "title": "Transparent pricing",
-        "body": "Fixed monthly fees, no surprise callout charges. Get an estimate in 3 minutes."
+        "body": "Fixed monthly fees, no surprise callout charges. Written quote within one week."
       }
     ]
   },
-  "pricing": {
-    "headline": "How much does outsourced IT cost?",
-    "sub": "Fill in our 15-question form and get an indicative quote in under 3 minutes. No commitment.",
-    "cta": "Start the Quote Calculator →",
-    "note": "Pricing adapts to your company size, device count, and required service level."
-  },
-  "references": {
-    "eyebrow": "REFERENCES",
-    "headline": "Trusted by businesses across Hungary",
+  "licenses": {
+    "eyebrow": "LICENCES & BACKGROUND",
+    "headline": "Licensed, insured contractor",
+    "lead": "One legal entity, one contract — and every required licence in place.",
     "items": [
       {
-        "company": "Horizont Trans Kft.",
-        "industry": "Logistics",
-        "quote": "SIROTECH manages our entire site's IT and camera systems in one hand. One call, and every issue gets resolved."
+        "title": "Police-authority permit",
+        "value": "07010-822/7987/2026. SZv.",
+        "body": "Required for security system installation. Without this, insurance companies do not accept the installed system."
       },
       {
-        "company": "MediPlan Health Center",
-        "industry": "Healthcare",
-        "quote": "They also guided us through our NIS2 preparation. Professional, well-documented work, delivered on time."
+        "title": "Construction registration",
+        "value": "17C03049",
+        "body": "Official contractor registration number."
       },
       {
-        "company": "FerroBuild Zrt.",
-        "industry": "Construction",
-        "quote": "Their custom worksheet management software saves us hours of administration every week. Their support is exemplary."
+        "title": "Fire protection qualification",
+        "value": "Valid",
+        "body": "Required for fire detection system installation and maintenance."
+      },
+      {
+        "title": "Liability insurance",
+        "value": "In place",
+        "body": "Professional liability insurance covering all installation works."
       }
     ]
+  },
+  "freeAssessment": {
+    "eyebrow": "FREE ON-SITE ASSESSMENT",
+    "headline": "Let's start with a no-cost assessment",
+    "lead": "We visit your site, review your existing systems, and within one week provide a written summary and itemised proposal. The assessment is free of charge and non-binding.",
+    "bullets": [
+      "IT systems: hardware, software, network, NIS2 risks",
+      "Security: camera and alarm systems, unprotected entry points",
+      "Written summary and itemised quote within one week",
+      "We will contact you within 1 business day to arrange the visit"
+    ],
+    "cta": "Request a Free Assessment",
+    "microcopy": "No obligation, no pressure on-site — after receiving the proposal, you decide whether to proceed."
+  },
+  "team": {
+    "eyebrow": "THE PEOPLE BEHIND THE COMPANY",
+    "headline": "Who we are",
+    "body": "SIROTECH is led by Dávid Skoda and Tamás Tóth. We have been working in IT and security technology since 2021 — following experience gained in manufacturing and multinational environments. Operating as an independent company since 2023, and as SIROTECH Informatikai és Biztonságtechnikai Kft. from 2026.\n\nToday we provide the technology backbone for more than 25 businesses across four specialisations. We personally carry out all assessments and work — no intermediaries, no subcontracting.",
+    "members": [
+      {
+        "name": "Dávid Skoda",
+        "role": "Head of Security Systems & Systems Administration Division",
+        "photo": "/team/david.png"
+      },
+      {
+        "name": "Tamás Tóth",
+        "role": "Head of Software Development Division",
+        "photo": "/team/tomi.png"
+      }
+    ]
+  },
+  "references": {
+    "eyebrow": "WHO WE WORK WITH",
+    "headline": "Trusted by businesses across Hungary",
+    "lead": "We have been working in IT and security technology since 2021. Today we provide the technology backbone for more than 25 businesses.",
+    "stats": [
+      { "value": "2021", "label": "in business since" },
+      { "value": "25+", "label": "active clients" },
+      { "value": "50+", "label": "completed projects" },
+      { "value": "4", "label": "service divisions" }
+    ],
+    "partners": [
+      { "name": "Bocskai", "logo": "/partners/kai-alba-flexum.jpg" },
+      { "name": "Kerámia Dental", "logo": "/partners/keramiadental-logo.png" },
+      { "name": "Tűzhal", "logo": "/partners/tuzhal.png" },
+      { "name": "Sport Hungary", "logo": "/partners/MDSZ.png" }
+    ],
+    "testimonials": []
   },
   "contact": {
     "eyebrow": "CONTACT",
@@ -149,10 +197,12 @@
       "location": "8000 Székesfehérvár, Lövölde utca 24"
     },
     "form": {
-      "company": "Company name",
+      "interest": "I'm interested in",
+      "interestRequired": "Please select an area of interest",
+      "company": "Company / Name",
       "name": "Name",
       "email": "Email",
-      "interest": "I'm interested in",
+      "phone": "Phone (optional)",
       "message": "Message",
       "options": [
         "SIRONIC – IT Operations",
@@ -161,10 +211,12 @@
         "SIROVILL – Electrical Installation",
         "Other / Not sure yet"
       ],
+      "gdpr": "I have read and accept the <a href=\"/adatvedelem\">Privacy Policy</a>.",
+      "gdprRequired": "Accepting the privacy policy is required.",
       "submit": "Send Message →",
       "sending": "Sending...",
       "success": "Thank you! We received your message and will get back to you within 1 business day.",
-      "error": "Something went wrong. Please try again or write to info@sirotech.hu.",
+      "error": "Something went wrong. Please try again or write to hello@sironic.hu.",
       "required": "Required field",
       "invalidEmail": "Invalid email address"
     }
@@ -173,14 +225,14 @@
     "brandsTitle": "Service Brands",
     "navTitle": "Navigation",
     "privacy": "Privacy Policy",
-    "legal": "© 2026 SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: 33056151-2-07 | 8000 Székesfehérvár, Lövölde utca 24",
+    "legal": "© {year} SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: 33056151-2-07 | Company Reg.: 07-09-037603 | Registry: Székesfehérvár Court of Registry | 8000 Székesfehérvár, Lövölde utca 24",
     "certifications": "Auth. Cert.: 07010-822/7987/2026. SZv. · Construction Reg.: 17C03049",
     "tagline": "One company. Every layer of protection."
   },
   "serviceAreas": {
     "eyebrow": "SERVICE AREAS",
     "headline": "IT operations, security systems and electrical works across Hungary",
-    "body": "Headquartered in Székesfehérvár — we deliver managed IT services, CCTV installation, alarm systems, electrical works and custom software development across Fejér County, Budapest, Transdanubia and multiple cities nationwide."
+    "body": "Headquartered in Székesfehérvár — we deliver managed IT services, CCTV installation, alarm systems, electrical works and custom software development in Fejér County, Budapest and the Transdanubia region."
   },
   "whyOneHand": {
     "eyebrow": "WHY FROM ONE PARTNER?",
@@ -200,7 +252,7 @@
       },
       {
         "title": "Local team",
-        "body": "Our Székesfehérvár base ensures fast, personal, and flexible on-site response."
+        "body": "Fast, personal, and flexible on-site response in Fejér County, Budapest and the Transdanubia region."
       }
     ]
   },
@@ -241,5 +293,12 @@
       "body": "Security systems, alarms, CCTV, and reliable electrical installations for your home.",
       "cta": "Request Residential Quote →"
     }
+  },
+  "cookie": {
+    "title": "We use cookies",
+    "body": "This website uses Google Analytics to track visitor statistics. Data is processed anonymously. See our",
+    "bodyLink": "privacy policy",
+    "accept": "Accept",
+    "decline": "Necessary only"
   }
 }
