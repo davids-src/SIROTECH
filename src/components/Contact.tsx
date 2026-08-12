@@ -100,8 +100,9 @@ export const Contact = () => {
     <section
       id="kapcsolat"
       data-testid="contact-section"
-      className="scroll-mt-20 border-t border-line/50 py-28"
+      className="relative scroll-mt-20 border-t border-line/50 py-28"
     >
+      <div id="contact" className="absolute -top-20" />
       <div className="mx-auto grid max-w-site gap-14 px-6 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <p className="label text-silver">{t("contact.eyebrow")}</p>

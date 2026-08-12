@@ -32,7 +32,7 @@ export const DoubleCta = () => {
               </p>
               <div className="mt-8">
                 <a
-                  href="#contact"
+                  href="#kapcsolat"
                   data-testid="double-cta-b2b-btn"
                   className="inline-flex items-center gap-2 rounded bg-silver px-6 py-3.5 text-sm font-semibold text-bg transition-colors hover:bg-ink"
                 >
@@ -63,7 +63,7 @@ export const DoubleCta = () => {
               </p>
               <div className="mt-8">
                 <a
-                  href="#contact"
+                  href="#kapcsolat"
                   data-testid="double-cta-b2c-btn"
                   className="inline-flex items-center gap-2 rounded border border-line px-6 py-3.5 text-sm font-semibold text-ink transition-colors hover:border-[#1A6BE8] hover:text-ink"
                 >

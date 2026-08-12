@@ -63,7 +63,7 @@ export const Hero = () => {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a
-            href="#ingyenes-felmeres"
+            href="#kapcsolat"
             data-testid="hero-primary-cta"
             onClick={() => trackEvent("hero_cta_primary", "engagement", "Free Assessment")}
             className="rounded bg-silver px-6 py-3 text-sm font-semibold text-bg transition-colors hover:bg-ink"

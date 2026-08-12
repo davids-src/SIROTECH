@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | SIROTECH",
   },
   description:
-    "IT üzemeltetés, rendszergazda szolgáltatás, kamerarendszer telepítés, egyedi szoftverfejlesztés és villanyszerelés – Fejér megyében, Budapesten és a Közép-Dunántúlon. Egy partner, minden technológiai réteghez.",
+    "IT üzemeltetés, rendszergazda szolgáltatás, kamerarendszer telepítés, egyedi szoftverfejlesztés és villanyszerelés – Fejér megyében, Budapesten és a Közép-Dunántúlon. Egy partner. Az Infrastruktúrája minden rétegéhez.",
   keywords: [
     "IT üzemeltetés",
     "rendszergazda szolgáltatás",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title:
       "SIROTECH – IT üzemeltetés, biztonságtechnika, szoftverfejlesztés | Székesfehérvár",
     description:
-      "Egy partner az infrastruktúrája minden rétegéhez. IT üzemeltetés, kamerarendszer telepítés, egyedi szoftver, villanyszerelés – Fejér megye, Budapest és a Közép-Dunántúl.",
+      "Egy partner. Az Infrastruktúrája minden rétegéhez. IT üzemeltetés, kamerarendszer telepítés, egyedi szoftver, villanyszerelés – Fejér megye, Budapest és a Közép-Dunántúl.",
     url: "https://sirotech.hu",
     siteName: "SIROTECH",
     locale: "hu_HU",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SIROTECH – IT, biztonságtechnika, szoftverfejlesztés | Székesfehérvár",
     description:
-      "Egy partner az infrastruktúrája minden rétegéhez – Fejér megye, Budapest, Közép-Dunántúl.",
+      "Egy partner. Az Infrastruktúrája minden rétegéhez – Fejér megye, Budapest, Közép-Dunántúl.",
   },
 };
 

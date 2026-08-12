@@ -12,7 +12,7 @@ export const Navbar = () => {
   const links = [
     { label: t("nav.about"), href: "#about", id: "about" },
     // { label: t("nav.references"), href: "#references", id: "references" },
-    { label: t("nav.contact"), href: "#contact", id: "contact" },
+    { label: t("nav.contact"), href: "#kapcsolat", id: "contact" },
   ];
 
   return (
@@ -92,7 +92,7 @@ export const Navbar = () => {
             </button>
           </div>
           <a
-            href="#contact"
+            href="#kapcsolat"
             data-testid="navbar-quote-btn"
             className="hidden rounded bg-silver px-4 py-2 text-sm font-semibold text-bg transition-colors hover:bg-ink sm:inline-flex"
           >
