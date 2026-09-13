@@ -24,7 +24,6 @@ export const DeepDives = () => {
         const bullets: string[] = t(`deep.${brand.id}.bullets`);
         const reversed = index % 2 === 1;
         const ctaTextColor = DARK_TEXT_BRANDS.has(brand.id) ? "#0A0A0C" : "#FFFFFF";
-        const isComingSoon = brand.comingSoon;
 
         return (
           <div
@@ -40,20 +39,6 @@ export const DeepDives = () => {
                   className="group relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg border bg-surface"
                   style={{ borderColor: `${brand.color}30` }}
                 >
-                  {isComingSoon && (
-                    <div className="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-bg/60 backdrop-blur-sm">
-                      <span
-                        className="rounded border px-4 py-2 font-mono text-xs uppercase tracking-widest font-semibold"
-                        style={{
-                          color: brand.color,
-                          borderColor: `${brand.color}50`,
-                          background: `${brand.color}15`,
-                        }}
-                      >
-                        Hamarosan
-                      </span>
-                    </div>
-                  )}
                   <div
                     className="absolute inset-0 opacity-20"
                     style={{
@@ -87,18 +72,6 @@ export const DeepDives = () => {
                   >
                     {t(`deep.${brand.id}.eyebrow`)}
                   </span>
-                  {isComingSoon && (
-                    <span
-                      className="label inline-block rounded-sm border px-2.5 py-1 font-semibold"
-                      style={{
-                        color: brand.color,
-                        borderColor: `${brand.color}50`,
-                        background: `${brand.color}20`,
-                      }}
-                    >
-                      Hamarosan
-                    </span>
-                  )}
                 </div>
                 <h3 className="mt-5 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
                   {t(`deep.${brand.id}.headline`)}
@@ -115,20 +88,8 @@ export const DeepDives = () => {
                     </li>
                   ))}
                 </ul>
-                {isComingSoon ? (
-                  <a
-                    href="#kapcsolat"
-                    data-testid={`deepdive-cta-${brand.id}`}
-                    onClick={() => trackEvent("deepdive_cta_click", "engagement", brand.id)}
-                    className="mt-9 inline-flex items-center gap-2 rounded px-5 py-2.5 text-sm font-semibold transition-transform duration-150 ease-out hover:scale-[1.02]"
-                    style={{ background: brand.color, color: ctaTextColor }}
-                  >
-                    {t(`deep.${brand.id}.cta`)}
-                    <ArrowUpRight size={16} />
-                  </a>
-                ) : (
-                  <a
-                    href={brand.href}
+                <a
+                  href={brand.href}
                     target="_blank"
                     rel="noreferrer"
                     data-testid={`deepdive-cta-${brand.id}`}
@@ -142,7 +103,6 @@ export const DeepDives = () => {
                     {t(`deep.${brand.id}.cta`)}
                     <ArrowUpRight size={16} />
                   </a>
-                )}
               </Reveal>
             </div>
           </div>

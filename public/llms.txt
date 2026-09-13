@@ -1,0 +1,60 @@
+# SIROTECH Informatikai és Biztonságtechnikai Kft.
+
+Négy szakterület egy cégen belül: informatikai
+üzemeltetés, biztonságtechnika, szoftverfejlesztés és
+villanyszerelés.
+
+Székhely: 8000 Székesfehérvár, Lövölde utca 24. 4/15.
+Adószám: 33056151-2-07
+Cégjegyzékszám: 07-09-037603
+
+## Divíziók
+
+### SIRONIC — Informatika
+Kiszervezett IT-üzemeltetés, hálózatépítés,
+szerverüzemeltetés, NIS2 felkészítés. Microsoft-fókusz:
+Windows Server, Active Directory, Entra ID, Microsoft
+365, Azure, Hyper-V. Emellett VMware és Linux.
+https://sironic.eu
+
+### SIRO-VÉD — Biztonságtechnika
+Kamerarendszerek, riasztó- és behatolásjelző rendszerek,
+beépített tűzjelző rendszerek, beléptetés. Rendőrhatósági
+biztonságtechnikai engedéllyel.
+https://siroved.hu
+
+### SIROSOFT — Szoftverfejlesztés
+Egyedi CRM, ERP, belső ügyviteli rendszerek,
+webalkalmazások. A fejlesztés házon belül történik.
+https://sirosoft.hu
+
+### SIROVILL — Villanyszerelés
+Épületvillamossági kivitelezés, felújítás,
+hibaelhárítás, világításkorszerűsítés, kábelezés
+építkezéskor. Felülvizsgálatot és jegyzőkönyvet nem
+vállalunk.
+https://sirovill.hu
+
+## Amiben mások vagyunk
+A legtöbb projektben nem egy szakág kell, hanem kettő
+vagy három: a hálózat, a kamerarendszer és a villamos
+nyomvonal ugyanabba a falba kerül. Ezeket egy cégen
+belül visszük, egy szerződéssel és egy ütemezéssel — így
+a megrendelőnek nem kell több alvállalkozót
+összehangolnia.
+
+## B2B alvállalkozói együttműködés
+Generálkivitelezőknek, IT-szolgáltatóknak, MSP-knek,
+rendszerintegrátoroknak és szakági cégeknek
+alvállalkozóként is dolgozunk. Szükség esetén a
+megrendelő arculatában.
+
+## Működési terület
+Helyszíni munka: Fejér megye, Budapest, Közép-Dunántúl.
+Távoli IT-támogatás: országosan.
+
+## Kapcsolat
+Skoda Dávid ügyvezető
+skoda.david@sironic.hu
++36 70 273 5532
+https://sirotech.hu

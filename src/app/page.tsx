@@ -9,6 +9,7 @@ import { HowWeWork } from "@/components/HowWeWork";
 import { FreeAssessmentCta } from "@/components/FreeAssessmentCta";
 import { Team } from "@/components/Team";
 import { References } from "@/components/References";
+import { B2bCooperation } from "@/components/B2bCooperation";
 import { DoubleCta } from "@/components/DoubleCta";
 import { ServiceAreas } from "@/components/ServiceAreas";
 import { Contact } from "@/components/Contact";
@@ -38,6 +39,7 @@ export default function Home() {
         {/* 10. Referenciák — logófal */}
         <References />
         {/* 11. B2B / B2C kettős CTA */}
+        <B2bCooperation />
         <DoubleCta />
         {/* 12. Lefedett területek */}
         <ServiceAreas />

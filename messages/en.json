@@ -18,9 +18,7 @@
     "sironic": "IT operations, managed services, network infrastructure and NIS2 compliance.",
     "siroved": "Security systems: CCTV, alarms, fire detection and access control.",
     "sirosoft": "Custom software development, web applications, ERP & CRM systems.",
-    "sirovill": "Electrical installation: power, low-voltage, industrial and commercial works.",
-    "soon": "Coming Soon",
-    "soonDesc": "The SIROTECH brand family keeps growing — new specialisations are on the way."
+    "sirovill": "Electrical installation: power, low-voltage, industrial and commercial works."
   },
   "about": {
     "eyebrow": "ABOUT SIROTECH",
@@ -73,13 +71,13 @@
       "eyebrow": "SIROVILL — ELECTRICAL INSTALLATION",
       "headline": "Power that quietly does its job in the background.",
       "bullets": [
-        "Full-scope power installations and renovations",
-        "Low-voltage, structured cabling and smart controls",
-        "Industrial, commercial and office electrical works",
+        "Building electrical installations and renovations",
+        "Circuit expansion and distribution board installation",
+        "LED lighting modernization",
         "Maintenance and troubleshooting",
-        "Electrical works in Fejér County, Budapest and the Transdanubia region"
+        "Construction cabling — power and low-voltage combined"
       ],
-      "cta": "Enquire about electrical works →"
+      "cta": "Visit sirovill.hu →"
     }
   },
   "why": {
@@ -194,7 +192,7 @@
     "details": {
       "email": "hello@sironic.hu",
       "phone": "+36 70 273 5532",
-      "location": "8000 Székesfehérvár, Lövölde utca 24"
+      "location": "8000 Székesfehérvár, Lövölde utca 24. 4/15."
     },
     "form": {
       "interest": "I'm interested in",
@@ -225,7 +223,7 @@
     "brandsTitle": "Service Brands",
     "navTitle": "Navigation",
     "privacy": "Privacy Policy",
-    "legal": "© {year} SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: 33056151-2-07 | Company Reg.: 07-09-037603 | Registry: Székesfehérvár Court of Registry | 8000 Székesfehérvár, Lövölde utca 24",
+    "legal": "© {year} SIROTECH Informatikai és Biztonságtechnikai Kft. | Tax ID: 33056151-2-07 | Company Reg.: 07-09-037603 | Registry: Székesfehérvár Court of Registry | 8000 Székesfehérvár, Lövölde utca 24. 4/15.",
     "certifications": "Auth. Cert.: 07010-822/7987/2026. SZv. · Construction Reg.: 17C03049",
     "tagline": "One company. Every layer of protection."
   },
@@ -300,5 +298,28 @@
     "bodyLink": "privacy policy",
     "accept": "Accept",
     "decline": "Necessary only"
+  },
+  "b2bCooperation": {
+    "eyebrow": "B2B COOPERATION",
+    "headline": "We also work as a subcontractor",
+    "lead": "Not only for end clients. We are available as a subcontractor for general contractors, IT providers and trade companies — as a specialist contractor on a project, or as extra capacity when your team is at full load.",
+    "highlight": "Most projects need two or three trades, not one. With us they sit within the same company — one contract, one schedule, one point of contact.",
+    "cards": {
+      "sironic": {
+        "title": "IT Capacity",
+        "body": "Alongside your existing IT team: Microsoft environments, networking, on-site installation.",
+        "target": "For MSPs, system integrators, internal IT teams"
+      },
+      "siroved": {
+        "title": "Low-voltage Trade",
+        "body": "Installation of CCTV, alarms, and fire detection as a subcontractor.",
+        "target": "For general contractors, electrical installation companies"
+      },
+      "sirovill": {
+        "title": "Electrical Trade",
+        "body": "Routing, conduit installation, building electricity — coordinated with low voltage.",
+        "target": "For general contractors, interior designers"
+      }
+    }
   }
 }

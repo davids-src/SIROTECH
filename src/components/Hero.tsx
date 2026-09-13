@@ -94,7 +94,7 @@ export const Hero = () => {
               transition={{ duration: 0.5, delay: 0.45 + index * 0.06, ease: "easeOut" }}
             >
               <a
-                href={brand.comingSoon ? "#kapcsolat" : `#${brand.id}`}
+                href={`#${brand.id}`}
                 data-testid={`brand-card-${brand.id}`}
                 onClick={() =>
                   trackEvent("brand_card_click", "engagement", brand.id)
@@ -107,18 +107,7 @@ export const Hero = () => {
                   } as React.CSSProperties
                 }
               >
-                {brand.comingSoon && (
-                  <span
-                    className="absolute right-3 top-3 rounded border px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest font-semibold"
-                    style={{
-                      color: brand.color,
-                      borderColor: `${brand.color}50`,
-                      background: `${brand.color}15`,
-                    }}
-                  >
-                    {t("brands.soon")}
-                  </span>
-                )}
+
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={brand.logo}
@@ -132,7 +121,7 @@ export const Hero = () => {
                   className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium"
                   style={{ color: brand.color }}
                 >
-                  {brand.comingSoon ? t("brands.soon") : `${t("brands.explore")} ${brand.name}`}
+                  {`${t("brands.explore")} ${brand.name}`}
                   <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
                 </span>
               </a>

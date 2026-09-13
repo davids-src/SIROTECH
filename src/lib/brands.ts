@@ -33,8 +33,7 @@ export const BRANDS: Brand[] = [
     id: "sirovill",
     name: "SIROVILL",
     color: "#F5B81C",
-    href: "#kapcsolat",
+    href: "https://sirovill.hu",
     logo: "/brand/sirovill_logo.svg",
-    comingSoon: true,
   },
 ];

@@ -18,9 +18,7 @@
     "sironic": "IT üzemeltetés, menedzselt szolgáltatások, hálózati infrastruktúra és NIS2 megfelelőség.",
     "siroved": "Biztonságtechnika: kamerarendszerek, riasztók, tűzjelzés és beléptetés.",
     "sirosoft": "Egyedi szoftverfejlesztés, webalkalmazások, ERP- és CRM-rendszerek.",
-    "sirovill": "Villanyszerelés: erősáram, gyengeáram, ipari és kereskedelmi kivitelezés.",
-    "soon": "Hamarosan",
-    "soonDesc": "A SIROTECH brandcsalád folyamatosan bővül — új szakterületek érkeznek."
+    "sirovill": "Villanyszerelés: erősáram, gyengeáram, ipari és kereskedelmi kivitelezés."
   },
   "about": {
     "eyebrow": "A SIROTECH-RŐL",
@@ -73,13 +71,13 @@
       "eyebrow": "SIROVILL — VILLANYSZERELÉS",
       "headline": "Áram, ami megbízhatóan a háttérben dolgozik.",
       "bullets": [
-        "Teljes körű erősáramú kivitelezés és felújítás",
-        "Gyengeáram, struktúrált hálózat és okos vezérlés",
-        "Ipari, kereskedelmi és irodaházi villanyszerelés",
+        "Épületvillamossági kivitelezés és felújítás",
+        "Áramkör-bővítés, elosztó szerelése",
+        "Világításkorszerűsítés LED-re",
         "Karbantartás és hibaelhárítás",
-        "Villanyszerelési munkák Fejér megyében, Budapesten és a Közép-Dunántúlon"
+        "Kábelezés építkezéskor — erős- és gyengeáram együtt"
       ],
-      "cta": "Érdeklődöm a villanyszerelésről →"
+      "cta": "Irány a sirovill.hu →"
     }
   },
   "why": {
@@ -194,7 +192,7 @@
     "details": {
       "email": "hello@sironic.hu",
       "phone": "+36 70 273 5532",
-      "location": "8000 Székesfehérvár, Lövölde utca 24"
+      "location": "8000 Székesfehérvár, Lövölde utca 24. 4/15."
     },
     "form": {
       "interest": "Érdeklődési terület",
@@ -225,7 +223,7 @@
     "brandsTitle": "Szolgáltatási márkák",
     "navTitle": "Navigáció",
     "privacy": "Adatvédelmi tájékoztató",
-    "legal": "© {year} SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: 33056151-2-07 | Cégjegyzékszám: 07-09-037603 | Nyilvántartó: Székesfehérvári Törvényszék Cégbírósága | 8000 Székesfehérvár, Lövölde utca 24",
+    "legal": "© {year} SIROTECH Informatikai és Biztonságtechnikai Kft. | Adószám: 33056151-2-07 | Cégjegyzékszám: 07-09-037603 | Nyilvántartó: Székesfehérvári Törvényszék Cégbírósága | 8000 Székesfehérvár, Lövölde utca 24. 4/15.",
     "certifications": "Hat. Biz.: 07010-822/7987/2026. SZv. · Épít. nyilv.: 17C03049",
     "tagline": "Egy cég. A védelem minden rétege."
   },
@@ -300,5 +298,28 @@
     "bodyLink": "adatvédelmi tájékoztatóban",
     "accept": "Elfogadom",
     "decline": "Csak szükségesek"
+  },
+  "b2bCooperation": {
+    "eyebrow": "B2B EGYÜTTMŰKÖDÉS",
+    "headline": "Alvállalkozóként is dolgozunk",
+    "lead": "Nem csak végfelhasználóknak. Generálkivitelezőknek, IT-szolgáltatóknak és szakági cégeknek alvállalkozóként is rendelkezésre állunk — szakági kivitelezőként egy projektben, vagy kapacitáskiegészítésként, amikor az Önök csapata tele van.",
+    "highlight": "A legtöbb projektben nem egy szakág kell, hanem kettő vagy három. Nálunk ezek ugyanannál a cégnél vannak — egy szerződéssel, egy ütemezéssel, egy kapcsolattartóval.",
+    "cards": {
+      "sironic": {
+        "title": "IT-kapacitás",
+        "body": "Meglévő IT-csapat mellé: Microsoft-környezet, hálózat, helyszíni kivitelezés.",
+        "target": "MSP-knek, rendszerintegrátoroknak, belső IT-csapatoknak"
+      },
+      "siroved": {
+        "title": "Gyengeáramú szakág",
+        "body": "Kamera, riasztó, tűzjelző kivitelezése alvállalkozóként.",
+        "target": "Generálkivitelezőknek, villanyszerelő cégeknek"
+      },
+      "sirovill": {
+        "title": "Villamos szakág",
+        "body": "Nyomvonal, csövezés, épületvillamosság — a gyengeárammal összehangolva.",
+        "target": "Generálkivitelezőknek, belsőépítészeknek"
+      }
+    }
   }
 }

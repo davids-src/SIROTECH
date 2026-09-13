@@ -22,11 +22,11 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "SIROTECH – IT üzemeltetés, biztonságtechnika, szoftverfejlesztés | Székesfehérvár",
+      "SIROTECH — IT üzemeltetés, biztonságtechnika, szoftverfejlesztés, villanyszerelés | Székesfehérvár",
     template: "%s | SIROTECH",
   },
   description:
-    "IT üzemeltetés, rendszergazda szolgáltatás, kamerarendszer telepítés, egyedi szoftverfejlesztés és villanyszerelés – Fejér megyében, Budapesten és a Közép-Dunántúlon. Egy partner. Az Infrastruktúrája minden rétegéhez.",
+    "Négy szakterület egy cégen belül: IT-üzemeltetés, kamerarendszer, egyedi szoftverfejlesztés és villanyszerelés. Egy partner, egy szerződés — Fejér megyében, Budapesten és a Közép-Dunántúlon. Alvállalkozói együttműködést is vállalunk.",
   keywords: [
     "IT üzemeltetés",
     "rendszergazda szolgáltatás",
@@ -53,6 +53,15 @@ export const metadata: Metadata = {
     "közép-dunántúli IT partner",
     "IT outsourcing Magyarország",
     "hálózatépítés KKV",
+    "alvállalkozói együttműködés",
+    "szakági alvállalkozó",
+    "B2B partner",
+    "generálkivitelező partner",
+    "IT alvállalkozó",
+    "gyengeáramú alvállalkozó",
+    "villanyszerelő alvállalkozó",
+    "négy szakág egy kézben",
+    "komplett műszaki kivitelezés",
   ],
   authors: [{ name: "SIROTECH Informatikai és Biztonságtechnikai Kft." }],
   creator: "SIROTECH Kft.",
@@ -67,9 +76,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "SIROTECH – IT üzemeltetés, biztonságtechnika, szoftverfejlesztés | Székesfehérvár",
+      "SIROTECH — IT üzemeltetés, biztonságtechnika, szoftverfejlesztés, villanyszerelés | Székesfehérvár",
     description:
-      "Egy partner. Az Infrastruktúrája minden rétegéhez. IT üzemeltetés, kamerarendszer telepítés, egyedi szoftver, villanyszerelés – Fejér megye, Budapest és a Közép-Dunántúl.",
+      "Négy szakterület egy cégen belül: IT-üzemeltetés, kamerarendszer, egyedi szoftverfejlesztés és villanyszerelés. Egy partner, egy szerződés — Fejér megyében, Budapesten és a Közép-Dunántúlon. Alvállalkozói együttműködést is vállalunk.",
     url: "https://sirotech.hu",
     siteName: "SIROTECH",
     locale: "hu_HU",
@@ -77,9 +86,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SIROTECH – IT, biztonságtechnika, szoftverfejlesztés | Székesfehérvár",
+    title: "SIROTECH — IT üzemeltetés, biztonságtechnika, szoftverfejlesztés, villanyszerelés | Székesfehérvár",
     description:
-      "Egy partner. Az Infrastruktúrája minden rétegéhez – Fejér megye, Budapest, Közép-Dunántúl.",
+      "Négy szakterület egy cégen belül: IT-üzemeltetés, kamerarendszer, egyedi szoftverfejlesztés és villanyszerelés. Egy partner, egy szerződés — Fejér megyében, Budapesten és a Közép-Dunántúlon. Alvállalkozói együttműködést is vállalunk.",
   },
 };
 
@@ -97,7 +106,7 @@ const organizationSchema = {
   foundingDate: "2021",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Lövölde utca 24",
+    streetAddress: "Lövölde utca 24. 4/15.",
     addressLocality: "Székesfehérvár",
     postalCode: "8000",
     addressRegion: "Fejér",
@@ -110,9 +119,14 @@ const organizationSchema = {
   },
   areaServed: [
     { "@type": "AdministrativeArea", name: "Fejér megye" },
-    { "@type": "City", name: "Székesfehérvár" },
     { "@type": "City", name: "Budapest" },
     { "@type": "AdministrativeArea", name: "Közép-Dunántúl" },
+  ],
+  knowsAbout: [
+    "IT üzemeltetés",
+    "Biztonságtechnika",
+    "Szoftverfejlesztés",
+    "Villanyszerelés"
   ],
   serviceType: [
     "IT üzemeltetés és rendszergazda szolgáltatás",
@@ -169,6 +183,7 @@ const organizationSchema = {
       name: "SIROVILL",
       description:
         "Villanyszerelés, ipari elektromos kivitelezés – Fejér megye és Budapest",
+      url: "https://sirovill.hu",
     },
   ],
 };

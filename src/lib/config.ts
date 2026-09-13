@@ -4,7 +4,7 @@ export const SITE = {
   company: "SIROTECH Informatikai és Biztonságtechnikai Kft.",
   phone: "+36 70 273 5532",
   email: "hello@sironic.hu",
-  address: "8000 Székesfehérvár, Lövölde utca 24",
+  address: "8000 Székesfehérvár, Lövölde utca 24. 4/15.",
   social: {
     facebook: process.env.NEXT_PUBLIC_SOCIAL_FACEBOOK ?? "",
     linkedin: process.env.NEXT_PUBLIC_SOCIAL_LINKEDIN ?? "",
