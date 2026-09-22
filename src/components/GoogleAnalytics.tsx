@@ -5,6 +5,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
 import { SITE } from '@/lib/config';
 import { gtag } from '@/lib/gtag';
+import { captureAttribution } from '@/lib/attribution';
 
 const STORAGE_KEY = 'sirotech_cookie_consent';
 
@@ -16,6 +17,8 @@ function AnalyticsTracker() {
   // removed manual config call on pathname change to avoid double counting
 
   useEffect(() => {
+    captureAttribution(searchParams, pathname);
+
     if (!SITE.ga) return;
 
     const handleGlobalClick = (e: MouseEvent) => {
@@ -50,7 +53,7 @@ function AnalyticsTracker() {
 
     document.addEventListener('click', handleGlobalClick);
     return () => document.removeEventListener('click', handleGlobalClick);
-  }, []);
+  }, [pathname, searchParams]);
 
   return null;
 }
